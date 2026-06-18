@@ -36,6 +36,9 @@
 .navbar-links {
   display: flex;
   gap: var(--space-md);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .nav-link {

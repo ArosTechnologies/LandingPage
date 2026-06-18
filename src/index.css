@@ -73,8 +73,12 @@ ul {
   padding: 0 var(--space-md);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .section {
-  padding: var(--space-xl) 0;
+  padding: 5rem 0;
 }
 
 .text-gradient {

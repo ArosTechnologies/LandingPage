@@ -2,6 +2,7 @@
   "translation": {
     "nav": {
       "services": "Services",
+      "demos": "Demos",
       "about": "About Us",
       "contact": "Contact"
     },
@@ -13,6 +14,40 @@
       "cta_primary": "Get Started",
       "cta_secondary": "Learn More",
       "marquee": "MEDICAL SOFTWARE ✦ BUSINESS SOLUTIONS ✦ CUSTOM DEVELOPMENT ✦ "
+    },
+    "metrics": {
+      "title": "Impact Metrics",
+      "subtitle": "Real numbers that drive measurable business outcomes.",
+      "uptime_value": "99.9%",
+      "uptime_label": "System Uptime Guaranteed",
+      "compliance_value": "HIPAA",
+      "compliance_label": "Security Compliant Standards",
+      "speed_value": "10x",
+      "speed_label": "Faster Operational Workflows",
+      "support_value": "24/7",
+      "support_label": "Direct Engineering Support"
+    },
+    "benefits": {
+      "title": "Why Choose Custom Software?",
+      "subtitle": "Generic software forces your business to adapt. Custom software adapts to your business.",
+      "card1_title": "Tailored for Scale",
+      "card1_desc": "Built explicitly for your workflows, reducing unnecessary overhead and automating manual tasks.",
+      "card2_title": "Medical-Grade Security",
+      "card2_desc": "Engineered with end-to-end encryption, strict access controls, and industry-standard compliance.",
+      "card3_title": "Seamless Integration",
+      "card3_desc": "Bridges the gaps in your current infrastructure, connecting existing CRMs, EHRs, and databases."
+    },
+    "process": {
+      "title": "Our Engineering Roadmap",
+      "subtitle": "A transparent, structured process designed to take your idea from concept to production.",
+      "step1_title": "01 / Discover & Strategy",
+      "step1_desc": "We deep-dive into your operational pain points, defining scope, constraints, and architecture.",
+      "step2_title": "02 / Prototype & Design",
+      "step2_desc": "Interactive mockups allow you to experience and approve the user flow before a single line of code is written.",
+      "step3_title": "03 / Agile Development",
+      "step3_desc": "Iterative bi-weekly sprints with continuous staging deployments so you can track progress live.",
+      "step4_title": "04 / Deploy & Optimize",
+      "step4_desc": "Production launch followed by telemetry monitoring, database tuning, and scaling support."
     },
     "demos": {
       "title": "Interactive Demos",
@@ -32,7 +67,11 @@
     },
     "about": {
       "title": "Why AROS Technologies?",
-      "description": "We are a team of dedicated engineers and designers focused on delivering premium software experiences tailored to your unique industry challenges."
+      "description": "We are a team of dedicated engineers and designers focused on delivering premium software experiences tailored to your unique industry challenges.",
+      "founder_title": "Founder & Lead Architect",
+      "founder_name": "Ivan Vivas",
+      "founder_role": "Founder & Software Engineer",
+      "founder_bio": "Passionate about building robust, high-performance, and elegant software solutions for business and medical industries."
     },
     "contact": {
       "title": "Get In Touch",

@@ -21,7 +21,7 @@ const Hero = () => {
       const ctx = canvas.getContext('2d');
       if (!ctx) return;
       
-      const thickness = 4; // Thickness of the outline border
+      const thickness = 7; // Thickness of the outline border
       
       canvas.width = img.naturalWidth + thickness * 2;
       canvas.height = img.naturalHeight + thickness * 2;
@@ -36,7 +36,7 @@ const Hero = () => {
       
       // Paint the outline light gray
       ctx.globalCompositeOperation = 'source-in';
-      ctx.fillStyle = '#e5e7eb'; // Light gray-200 equivalent
+      ctx.fillStyle = '#9ca3af'; // Darker gray-400 equivalent for better visibility
       ctx.fillRect(0, 0, canvas.width, canvas.height);
       
       // Subtract the inside of the logo to leave only the outline border
@@ -64,7 +64,7 @@ const Hero = () => {
             containerRef.current.style.opacity = `${Math.max(1 - sy / 450, 0)}`;
           }
           if (logoFilledRef.current) {
-            const fillPercent = Math.min((sy / 350) * 100, 100);
+            const fillPercent = Math.min((sy / 500) * 100, 100);
             logoFilledRef.current.style.clipPath = `inset(${100 - fillPercent}% 0 0 0)`;
             if (logoEmptyRef.current) {
               logoEmptyRef.current.style.clipPath = `inset(0 0 ${fillPercent}% 0)`;
@@ -85,7 +85,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="hero">
+    <section className="hero section">
       <div 
         ref={bgRef}
         className="hero-background"

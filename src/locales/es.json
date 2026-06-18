@@ -2,6 +2,7 @@
   "translation": {
     "nav": {
       "services": "Servicios",
+      "demos": "Demos",
       "about": "Nosotros",
       "contact": "Contacto"
     },
@@ -13,6 +14,40 @@
       "cta_primary": "Comenzar",
       "cta_secondary": "Saber Más",
       "marquee": "SOFTWARE MÉDICO ✦ SOLUCIONES EMPRESARIALES ✦ DESARROLLO A MEDIDA ✦ "
+    },
+    "metrics": {
+      "title": "Métricas de Impacto",
+      "subtitle": "Números reales que impulsan resultados comerciales medibles.",
+      "uptime_value": "99.9%",
+      "uptime_label": "Tiempo de Actividad Garantizado",
+      "compliance_value": "HIPAA",
+      "compliance_label": "Cumplimiento de Seguridad",
+      "speed_value": "10x",
+      "speed_label": "Flujos de Trabajo Más Rápidos",
+      "support_value": "24/7",
+      "support_label": "Soporte Directo de Ingeniería"
+    },
+    "benefits": {
+      "title": "¿Por qué elegir Software a Medida?",
+      "subtitle": "El software genérico obliga a tu empresa a adaptarse. El software a medida se adapta a tu negocio.",
+      "card1_title": "Diseñado para Escalar",
+      "card1_desc": "Construido explícitamente para tus flujos de trabajo, reduciendo procesos innecesarios y automatizando tareas manuales.",
+      "card2_title": "Seguridad de Nivel Médico",
+      "card2_desc": "Diseñado con cifrado de extremo a extremo, controles estrictos de acceso y cumplimiento normativo del sector.",
+      "card3_title": "Integración Perfecta",
+      "card3_desc": "Cubre las brechas en tu infraestructura actual, conectando tus sistemas CRM, EHR y bases de datos existentes."
+    },
+    "process": {
+      "title": "Nuestra Ruta de Ingeniería",
+      "subtitle": "Un proceso transparente y estructurado diseñado para llevar tu idea desde el concepto hasta la producción.",
+      "step1_title": "01 / Descubrimiento y Estrategia",
+      "step1_desc": "Analizamos en profundidad tus puntos críticos operativos, definiendo el alcance, los límites y la arquitectura.",
+      "step2_title": "02 / Prototipado y Diseño",
+      "step2_desc": "Los prototipos interactivos te permiten experimentar y aprobar el flujo de usuario antes de escribir código.",
+      "step3_title": "03 / Desarrollo Ágil",
+      "step3_desc": "Sprints quincenales iterativos con despliegues continuos en servidores de prueba para que sigas el avance en vivo.",
+      "step4_title": "04 / Despliegue y Optimización",
+      "step4_desc": "Lanzamiento a producción seguido del monitoreo telemétrico, optimización de base de datos y soporte de escalabilidad."
     },
     "demos": {
       "title": "Demos Interactivos",
@@ -32,7 +67,11 @@
     },
     "about": {
       "title": "¿Por qué AROS Technologies?",
-      "description": "Somos un equipo de ingenieros y diseñadores dedicados a ofrecer experiencias de software premium, adaptadas a los desafíos únicos de tu industria."
+      "description": "Somos un equipo de ingenieros y diseñadores dedicados a ofrecer experiencias de software premium, adaptadas a los desafíos únicos de tu industria.",
+      "founder_title": "Fundador y Arquitecto Principal",
+      "founder_name": "Ivan Vivas",
+      "founder_role": "Fundador e Ingeniero de Software",
+      "founder_bio": "Apasionado por construir soluciones de software robustas, elegantes y de alto rendimiento para las industrias empresarial y médica."
     },
     "contact": {
       "title": "Ponte en Contacto",

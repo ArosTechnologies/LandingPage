@@ -14,15 +14,16 @@ const Navbar = () => {
   };
 
   const navLinks = [
-    { label: t('nav.services'), href: '#services' },
-    { label: t('nav.about'), href: '#about' },
-    { label: t('nav.contact'), href: '#contact' },
+    { label: t('nav.services'), href: '/#services' },
+    { label: t('nav.demos'), href: '#/demos' },
+    { label: t('nav.about'), href: '#/about' },
+    { label: t('nav.contact'), href: '/#contact' },
   ];
 
   return (
     <nav className="navbar glass-panel">
       <div className="navbar-container">
-        <a href="#" className="navbar-brand">
+        <a href="/#" className="navbar-brand">
           <img src={logo} alt="AROS Technologies" className="navbar-logo" />
         </a>
 

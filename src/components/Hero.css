@@ -176,8 +176,8 @@
   justify-content: center;
   align-items: center;
   pointer-events: none;
-  z-index: -1;
-  opacity: 0.35; /* Controls overall background logo visibility */
+  z-index: 0;
+  opacity: 0.35;
 }
 
 .bg-logo-img {
@@ -190,9 +190,11 @@
 .bg-logo-empty {
   opacity: 0.7; /* Visible outline, gets covered by solid fill */
   will-change: clip-path;
+  transition: clip-path 0.6s ease-out;
 }
 
 .bg-logo-filled {
   opacity: 1; /* Solid, covers the outline completely */
   will-change: clip-path;
+  transition: clip-path 0.6s ease-out;
 }
