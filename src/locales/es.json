@@ -1,0 +1,57 @@
+{
+  "translation": {
+    "nav": {
+      "services": "Servicios",
+      "about": "Nosotros",
+      "contact": "Contacto"
+    },
+    "hero": {
+      "title_line1": "POTENCIAMOS",
+      "title_line2": "TU NEGOCIO",
+      "title_highlight": "CON CÓDIGO.",
+      "subtitle": "AROS Technologies se especializa en la creación de software médico y empresarial de vanguardia para llevar tus operaciones al siguiente nivel.",
+      "cta_primary": "Comenzar",
+      "cta_secondary": "Saber Más",
+      "marquee": "SOFTWARE MÉDICO ✦ SOLUCIONES EMPRESARIALES ✦ DESARROLLO A MEDIDA ✦ "
+    },
+    "demos": {
+      "title": "Demos Interactivos",
+      "subtitle": "Experimenta el poder de nuestras soluciones de primera mano.",
+      "empty_state": "Demos próximamente."
+    },
+    "products_services": {
+      "title": "Productos y Servicios",
+      "products": {
+        "title": "Nuestros Productos",
+        "description": "Aplicaciones seguras, intuitivas y que cumplen con las normativas, listas para implementar y mejorar tus flujos de trabajo."
+      },
+      "services": {
+        "title": "Servicios a Medida",
+        "description": "Desarrollo de software corporativo escalable que optimiza procesos, aumenta la eficiencia y acelera el crecimiento."
+      }
+    },
+    "about": {
+      "title": "¿Por qué AROS Technologies?",
+      "description": "Somos un equipo de ingenieros y diseñadores dedicados a ofrecer experiencias de software premium, adaptadas a los desafíos únicos de tu industria."
+    },
+    "contact": {
+      "title": "Ponte en Contacto",
+      "subtitle": "Nos encantaría saber de ti. Completa el formulario o llámanos.",
+      "info_title": "Información de Contacto",
+      "info_desc": "¿Tienes un proyecto en mente o una consulta? Estamos listos para ayudarte a construir la solución de software perfecta.",
+      "phone": "Teléfono",
+      "form": {
+        "name": "Tu Nombre",
+        "name_placeholder": "Juan Pérez",
+        "email": "Correo Electrónico",
+        "email_placeholder": "juan@ejemplo.com",
+        "inquiry": "Tu Idea / Consulta",
+        "inquiry_placeholder": "Cuéntanos sobre tu proyecto o en qué necesitas ayuda...",
+        "submit": "Enviar Mensaje"
+      }
+    },
+    "footer": {
+      "copyright": "© 2026 AROS Technologies. Todos los derechos reservados."
+    }
+  }
+}

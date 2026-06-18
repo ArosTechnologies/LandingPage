@@ -1,0 +1,51 @@
+.products-services {
+  position: relative;
+  background-color: var(--bg-tertiary);
+}
+
+.ps-header {
+  text-align: center;
+  margin-bottom: var(--space-xl);
+}
+
+.ps-card {
+  padding: var(--space-lg);
+  transition: all var(--transition-normal);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  /* Hard edges set in index.css glass-panel but we ensure no overrides here */
+}
+
+.ps-card:hover {
+  transform: translateY(-10px);
+  border-color: rgba(255, 69, 0, 0.5);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.ps-icon {
+  width: 64px;
+  height: 64px;
+  background: rgba(255, 69, 0, 0.1);
+  /* Hard edge */
+  border-radius: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: var(--space-md);
+  transition: transform var(--transition-fast);
+}
+
+.ps-card:hover .ps-icon {
+  transform: scale(1.1);
+}
+
+.ps-title {
+  font-size: 1.5rem;
+  margin-bottom: var(--space-sm);
+}
+
+.ps-description {
+  color: var(--text-secondary);
+  line-height: 1.7;
+}

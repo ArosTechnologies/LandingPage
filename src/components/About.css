@@ -1,0 +1,90 @@
+.about {
+  position: relative;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%); /* Ensures it breaks out of any parent bounds if needed */
+  background: var(--bg-primary);
+  border-top: 1px solid var(--glass-border);
+  border-bottom: 1px solid var(--glass-border);
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-xl);
+  padding: var(--space-xl) 5vw;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  max-width: 1800px; /* Still a sane upper limit, but much wider than the standard 1200px container */
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .about-content {
+    grid-template-columns: 1fr 1fr;
+    padding: var(--space-xl) 10vw;
+  }
+}
+
+.about-text {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+}
+
+.about-title {
+  font-family: var(--font-heading);
+  line-height: 1.2;
+  margin-bottom: var(--space-sm);
+  font-size: clamp(2.5rem, 4vw, 4rem);
+  letter-spacing: -0.02em;
+}
+
+.about-description {
+  font-size: clamp(1.125rem, 2vw, 1.5rem);
+  color: var(--text-secondary);
+  line-height: 1.8;
+  margin-top: var(--space-md);
+}
+
+.about-visual {
+  position: relative;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.visual-circle {
+  position: absolute;
+  /* Hard edges for visual shapes too (squares) */
+  border-radius: 0;
+  border: 2px solid rgba(255, 69, 0, 0.2);
+  animation: pulse 4s infinite cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.circle-1 {
+  width: 200px;
+  height: 200px;
+  border-color: var(--accent-orange);
+  animation-delay: 0s;
+}
+
+.circle-2 {
+  width: 300px;
+  height: 300px;
+  animation-delay: 1s;
+}
+
+.circle-3 {
+  width: 400px;
+  height: 400px;
+  opacity: 0.5;
+  animation-delay: 2s;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 0.8; }
+  50% { transform: scale(1.1); opacity: 0.3; }
+  100% { transform: scale(1); opacity: 0.8; }
+}

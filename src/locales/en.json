@@ -1,0 +1,57 @@
+{
+  "translation": {
+    "nav": {
+      "services": "Services",
+      "about": "About Us",
+      "contact": "Contact"
+    },
+    "hero": {
+      "title_line1": "EMPOWERING",
+      "title_line2": "YOUR BUSINESS",
+      "title_highlight": "WITH CODE.",
+      "subtitle": "AROS Technologies specializes in crafting cutting-edge medical and business software to elevate your operations to the next level.",
+      "cta_primary": "Get Started",
+      "cta_secondary": "Learn More",
+      "marquee": "MEDICAL SOFTWARE ✦ BUSINESS SOLUTIONS ✦ CUSTOM DEVELOPMENT ✦ "
+    },
+    "demos": {
+      "title": "Interactive Demos",
+      "subtitle": "Experience the power of our solutions firsthand.",
+      "empty_state": "Demos coming soon."
+    },
+    "products_services": {
+      "title": "Products & Services",
+      "products": {
+        "title": "Our Products",
+        "description": "Secure, compliant, and intuitive applications ready to deploy and improve your workflows instantly."
+      },
+      "services": {
+        "title": "Custom Services",
+        "description": "Scalable enterprise software development that optimizes processes, drives efficiency, and accelerates growth."
+      }
+    },
+    "about": {
+      "title": "Why AROS Technologies?",
+      "description": "We are a team of dedicated engineers and designers focused on delivering premium software experiences tailored to your unique industry challenges."
+    },
+    "contact": {
+      "title": "Get In Touch",
+      "subtitle": "We'd love to hear from you. Fill out the form or give us a call.",
+      "info_title": "Contact Information",
+      "info_desc": "Have a project in mind or an inquiry? We are ready to help you build the perfect software solution.",
+      "phone": "Phone",
+      "form": {
+        "name": "Your Name",
+        "name_placeholder": "John Doe",
+        "email": "Email Address",
+        "email_placeholder": "john@example.com",
+        "inquiry": "Your Idea / Inquiry",
+        "inquiry_placeholder": "Tell us about your project or what you need help with...",
+        "submit": "Send Message"
+      }
+    },
+    "footer": {
+      "copyright": "© 2026 AROS Technologies. All rights reserved."
+    }
+  }
+}
