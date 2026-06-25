@@ -2,37 +2,126 @@
   "translation": {
     "nav": {
       "services": "Services",
+      "demos": "Products",
       "about": "About Us",
       "contact": "Contact"
     },
     "hero": {
       "title_line1": "EMPOWERING",
       "title_line2": "YOUR BUSINESS",
-      "title_highlight": "WITH CODE.",
+      "title_highlight": "WITH TECHNOLOGY.",
       "subtitle": "AROS Technologies specializes in crafting cutting-edge medical and business software to elevate your operations to the next level.",
       "cta_primary": "Get Started",
       "cta_secondary": "Learn More",
-      "marquee": "MEDICAL SOFTWARE ✦ BUSINESS SOLUTIONS ✦ CUSTOM DEVELOPMENT ✦ "
+      "marquee": "MEDICAL SOFTWARE \u00A0\u00A0\u00A0 ✦ \u00A0\u00A0\u00A0 BUSINESS SOLUTIONS \u00A0\u00A0\u00A0 ✦ \u00A0\u00A0\u00A0 CUSTOM DEVELOPMENT \u00A0\u00A0\u00A0 ✦ \u00A0\u00A0\u00A0"
+    },
+    "metrics": {
+      "title": "Impact Metrics",
+      "subtitle": "Real numbers that drive measurable business outcomes.",
+      "uptime_value": "99.9%",
+      "uptime_label": "System Uptime Guaranteed",
+      "compliance_value": "HIPAA",
+      "compliance_label": "Security Compliant Standards",
+      "speed_value": "10x",
+      "speed_label": "Faster Operational Workflows",
+      "support_value": "24/7",
+      "support_label": "Direct Engineering Support"
+    },
+    "benefits": {
+      "title": "Why Choose Custom Software?",
+      "subtitle": "Generic software forces your business to adapt. Custom software adapts to your business.",
+      "card1_title": "Tailored for Scale",
+      "card1_desc": "Built explicitly for your workflows, reducing unnecessary overhead and automating manual tasks.",
+      "card2_title": "Enterprise-Grade Security",
+      "card2_desc": "Engineered with end-to-end encryption, strict access controls, and full compliance with any regulatory, legal, and industry standards.",
+      "card3_title": "Seamless Integration",
+      "card3_desc": "Bridges the gaps in your current infrastructure, connecting existing CRMs, EHRs, and databases."
+    },
+    "process": {
+      "title": "Our Engineering Roadmap",
+      "subtitle": "A transparent, structured process designed to take your idea from concept to production.",
+      "step1_title": "01 / Discover & Strategy",
+      "step1_desc": "We deep-dive into your operational pain points, defining scope, constraints, and architecture.",
+      "step2_title": "02 / Prototype & Design",
+      "step2_desc": "Interactive mockups allow you to experience and approve the user flow before a single line of code is written.",
+      "step3_title": "03 / Agile Development",
+      "step3_desc": "Iterative bi-weekly sprints with continuous staging deployments so you can track progress live.",
+      "step4_title": "04 / Deploy & Optimize",
+      "step4_desc": "Production launch followed by telemetry monitoring, database tuning, and scaling support."
     },
     "demos": {
       "title": "Interactive Demos",
       "subtitle": "Experience the power of our solutions firsthand.",
-      "empty_state": "Demos coming soon."
+      "items": [
+        {
+          "title": "Medical Dashboard Pro",
+          "description": "A comprehensive Electronic Health Record (EHR) dashboard featuring real-time patient monitoring, secure data transmission, and predictive analytics for hospital resource management."
+        },
+        {
+          "title": "Enterprise ERP System",
+          "description": "A highly scalable enterprise resource planning tool tailored for manufacturing. Includes automated inventory tracking, supply chain forecasting, and financial reporting."
+        },
+        {
+          "title": "Telehealth Connect",
+          "description": "A HIPAA-compliant video consultation platform with integrated billing, digital prescriptions, and automated appointment scheduling."
+        },
+        {
+          "title": "Logistics Route Optimizer",
+          "description": "An AI-powered logistics tracking system that visualizes fleet movements, optimizes delivery routes in real-time, and reduces fuel consumption."
+        },
+        {
+          "title": "FinTech Payment Gateway",
+          "description": "A secure, multi-currency payment processing gateway designed for high-volume transactions with built-in fraud detection and regulatory compliance."
+        }
+      ]
     },
     "products_services": {
       "title": "Products & Services",
       "products": {
         "title": "Our Products",
-        "description": "Secure, compliant, and intuitive applications ready to deploy and improve your workflows instantly."
+        "description": "Secure, compliant, and intuitive applications ready to deploy and improve your workflows instantly.",
+        "link": "See our products"
       },
       "services": {
         "title": "Custom Services",
-        "description": "Scalable enterprise software development that optimizes processes, drives efficiency, and accelerates growth."
+        "description": "Scalable enterprise software development that optimizes processes, drives efficiency, and accelerates growth.",
+        "link": "See our services"
       }
+    },
+    "services_page": {
+      "title": "Our Services",
+      "subtitle": "Comprehensive engineering solutions tailored to your unique technical and business challenges.",
+      "items": [
+        {
+          "title": "Custom Enterprise Software",
+          "description": "End-to-end development of scalable, secure, and highly available web and mobile applications tailored to your exact business logic."
+        },
+        {
+          "title": "Cloud Architecture & DevSecOps",
+          "description": "Design, deployment, and management of resilient cloud infrastructures on AWS, GCP, or Azure with automated CI/CD pipelines and baked-in security."
+        },
+        {
+          "title": "Legacy System Modernization",
+          "description": "Refactoring and migrating outdated monolithic systems into modern microservices architectures without disrupting your ongoing operations."
+        },
+        {
+          "title": "Data Engineering & AI Solutions",
+          "description": "Building robust data pipelines, data warehouses, and integrating custom machine learning models to unlock predictive analytics and business intelligence."
+        }
+      ]
     },
     "about": {
       "title": "Why AROS Technologies?",
-      "description": "We are a team of dedicated engineers and designers focused on delivering premium software experiences tailored to your unique industry challenges."
+      "description": "We are a team of dedicated engineers and designers focused on delivering premium software experiences tailored to your unique industry challenges.",
+      "team_title": "Meet the Team",
+      "team_subtitle": "The experts behind the code.",
+      "founder_title": "Founder & Lead Architect",
+      "founder_name": "Ivan Vivas",
+      "founder_role": "Founder & Software Engineer",
+      "founder_bio": "Passionate about building robust, high-performance, and elegant software solutions for business and medical industries.",
+      "history_title": "Our Background",
+      "history_p1": "AROS Technologies started with a vision to revolutionize how businesses operate by leveraging modern, secure, and highly scalable software architecture.",
+      "history_p2": "We are dedicated to continuous innovation, ensuring our clients stay ahead of the curve in an increasingly digital landscape. This space will be updated with more of our story soon."
     },
     "contact": {
       "title": "Get In Touch",
@@ -40,6 +129,9 @@
       "info_title": "Contact Information",
       "info_desc": "Have a project in mind or an inquiry? We are ready to help you build the perfect software solution.",
       "phone": "Phone",
+      "email_label": "Email",
+      "linkedin": "LinkedIn",
+      "github": "GitHub",
       "form": {
         "name": "Your Name",
         "name_placeholder": "John Doe",
@@ -47,8 +139,18 @@
         "email_placeholder": "john@example.com",
         "inquiry": "Your Idea / Inquiry",
         "inquiry_placeholder": "Tell us about your project or what you need help with...",
+        "requirements": "Regulatory or Legal Requirements",
+        "requirements_placeholder": "List any compliance needs (e.g., HIPAA, GDPR)...",
+        "budget": "Estimated Budget",
+        "budget_placeholder": "e.g. 5000",
+        "currency": "Currency",
         "submit": "Send Message"
       }
+    },
+    "cta": {
+      "title": "Ready to Upgrade?",
+      "subtitle": "Let's build the future of your business operations together.",
+      "button": "Get in Touch"
     },
     "footer": {
       "copyright": "© 2026 AROS Technologies. All rights reserved."

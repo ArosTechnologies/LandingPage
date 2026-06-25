@@ -2,37 +2,126 @@
   "translation": {
     "nav": {
       "services": "Servicios",
+      "demos": "Productos",
       "about": "Nosotros",
       "contact": "Contacto"
     },
     "hero": {
       "title_line1": "POTENCIAMOS",
       "title_line2": "TU NEGOCIO",
-      "title_highlight": "CON CÓDIGO.",
+      "title_highlight": "CON TECNOLOGÍA.",
       "subtitle": "AROS Technologies se especializa en la creación de software médico y empresarial de vanguardia para llevar tus operaciones al siguiente nivel.",
       "cta_primary": "Comenzar",
       "cta_secondary": "Saber Más",
-      "marquee": "SOFTWARE MÉDICO ✦ SOLUCIONES EMPRESARIALES ✦ DESARROLLO A MEDIDA ✦ "
+      "marquee": "SOFTWARE MÉDICO \u00A0\u00A0\u00A0 ✦ \u00A0\u00A0\u00A0 SOLUCIONES EMPRESARIALES \u00A0\u00A0\u00A0 ✦ \u00A0\u00A0\u00A0 DESARROLLO A MEDIDA \u00A0\u00A0\u00A0 ✦ \u00A0\u00A0\u00A0"
+    },
+    "metrics": {
+      "title": "Métricas de Impacto",
+      "subtitle": "Números reales que impulsan resultados comerciales medibles.",
+      "uptime_value": "99.9%",
+      "uptime_label": "Tiempo de Actividad Garantizado",
+      "compliance_value": "HIPAA",
+      "compliance_label": "Cumplimiento de Seguridad",
+      "speed_value": "10x",
+      "speed_label": "Flujos de Trabajo Más Rápidos",
+      "support_value": "24/7",
+      "support_label": "Soporte Directo de Ingeniería"
+    },
+    "benefits": {
+      "title": "¿Por qué elegir Software a Medida?",
+      "subtitle": "El software genérico obliga a tu empresa a adaptarse. El software a medida se adapta a tu negocio.",
+      "card1_title": "Diseñado para Escalar",
+      "card1_desc": "Construido explícitamente para tus flujos de trabajo, reduciendo procesos innecesarios y automatizando tareas manuales.",
+      "card2_title": "Seguridad de Nivel Empresarial",
+      "card2_desc": "Diseñado con cifrado de extremo a extremo, controles estrictos de acceso y cumplimiento total con cualquier requisito normativo, legal y estándar de la industria.",
+      "card3_title": "Integración Perfecta",
+      "card3_desc": "Cubre las brechas en tu infraestructura actual, conectando tus sistemas CRM, EHR y bases de datos existentes."
+    },
+    "process": {
+      "title": "Nuestra Ruta de Ingeniería",
+      "subtitle": "Un proceso transparente y estructurado diseñado para llevar tu idea desde el concepto hasta la producción.",
+      "step1_title": "01 / Descubrimiento y Estrategia",
+      "step1_desc": "Analizamos en profundidad tus puntos críticos operativos, definiendo el alcance, los límites y la arquitectura.",
+      "step2_title": "02 / Prototipado y Diseño",
+      "step2_desc": "Los prototipos interactivos te permiten experimentar y aprobar el flujo de usuario antes de escribir código.",
+      "step3_title": "03 / Desarrollo Ágil",
+      "step3_desc": "Sprints quincenales iterativos con despliegues continuos en servidores de prueba para que sigas el avance en vivo.",
+      "step4_title": "04 / Despliegue y Optimización",
+      "step4_desc": "Lanzamiento a producción seguido del monitoreo telemétrico, optimización de base de datos y soporte de escalabilidad."
     },
     "demos": {
       "title": "Demos Interactivos",
       "subtitle": "Experimenta el poder de nuestras soluciones de primera mano.",
-      "empty_state": "Demos próximamente."
+      "items": [
+        {
+          "title": "Medical Dashboard Pro",
+          "description": "Un panel integral de Historia Clínica Electrónica (EHR) con monitoreo de pacientes en tiempo real, transmisión segura de datos y análisis predictivo para la gestión de recursos hospitalarios."
+        },
+        {
+          "title": "Sistema ERP Empresarial",
+          "description": "Una herramienta de planificación de recursos empresariales altamente escalable adaptada a la manufactura. Incluye seguimiento automatizado de inventario, pronóstico de cadena de suministro e informes financieros."
+        },
+        {
+          "title": "Telehealth Connect",
+          "description": "Una plataforma de videoconsulta que cumple con HIPAA con facturación integrada, recetas digitales y programación automatizada de citas."
+        },
+        {
+          "title": "Optimizador de Rutas Logísticas",
+          "description": "Un sistema de seguimiento logístico impulsado por IA que visualiza movimientos de flotas, optimiza rutas de entrega en tiempo real y reduce el consumo de combustible."
+        },
+        {
+          "title": "Pasarela de Pagos FinTech",
+          "description": "Una pasarela de procesamiento de pagos segura y multidivisa diseñada para transacciones de alto volumen con detección de fraude integrada y cumplimiento normativo."
+        }
+      ]
     },
     "products_services": {
       "title": "Productos y Servicios",
       "products": {
         "title": "Nuestros Productos",
-        "description": "Aplicaciones seguras, intuitivas y que cumplen con las normativas, listas para implementar y mejorar tus flujos de trabajo."
+        "description": "Aplicaciones seguras, intuitivas y que cumplen con las normativas, listas para implementar y mejorar tus flujos de trabajo.",
+        "link": "Ver nuestros productos"
       },
       "services": {
         "title": "Servicios a Medida",
-        "description": "Desarrollo de software corporativo escalable que optimiza procesos, aumenta la eficiencia y acelera el crecimiento."
+        "description": "Desarrollo de software corporativo escalable que optimiza procesos, aumenta la eficiencia y acelera el crecimiento.",
+        "link": "Ver nuestros servicios"
       }
+    },
+    "services_page": {
+      "title": "Nuestros Servicios",
+      "subtitle": "Soluciones de ingeniería integrales adaptadas a sus desafíos técnicos y comerciales únicos.",
+      "items": [
+        {
+          "title": "Software Empresarial a Medida",
+          "description": "Desarrollo de extremo a extremo de aplicaciones web y móviles escalables, seguras y de alta disponibilidad, adaptadas a la lógica exacta de su negocio."
+        },
+        {
+          "title": "Arquitectura en la Nube y DevSecOps",
+          "description": "Diseño, implementación y gestión de infraestructuras en la nube resilientes en AWS, GCP o Azure con canales automatizados de CI/CD y seguridad integrada."
+        },
+        {
+          "title": "Modernización de Sistemas Heredados",
+          "description": "Refactorización y migración de sistemas monolíticos obsoletos hacia arquitecturas modernas de microservicios sin interrumpir sus operaciones en curso."
+        },
+        {
+          "title": "Ingeniería de Datos y Soluciones de IA",
+          "description": "Construcción de canalizaciones de datos robustas, almacenes de datos e integración de modelos de aprendizaje automático personalizados para desbloquear análisis predictivos."
+        }
+      ]
     },
     "about": {
       "title": "¿Por qué AROS Technologies?",
-      "description": "Somos un equipo de ingenieros y diseñadores dedicados a ofrecer experiencias de software premium, adaptadas a los desafíos únicos de tu industria."
+      "description": "Somos un equipo de ingenieros y diseñadores dedicados a ofrecer experiencias de software premium, adaptadas a los desafíos únicos de tu industria.",
+      "team_title": "Conoce al Equipo",
+      "team_subtitle": "Los expertos detrás del código.",
+      "founder_title": "Fundador y Arquitecto Principal",
+      "founder_name": "Ivan Vivas",
+      "founder_role": "Fundador e Ingeniero de Software",
+      "founder_bio": "Apasionado por construir soluciones de software robustas, elegantes y de alto rendimiento para las industrias empresarial y médica.",
+      "history_title": "Nuestra Historia",
+      "history_p1": "AROS Technologies comenzó con la visión de revolucionar la forma en que operan las empresas aprovechando una arquitectura de software moderna, segura y altamente escalable.",
+      "history_p2": "Estamos dedicados a la innovación continua, asegurando que nuestros clientes se mantengan a la vanguardia en el panorama digital. Este espacio se actualizará pronto con más detalles de nuestra historia."
     },
     "contact": {
       "title": "Ponte en Contacto",
@@ -40,6 +129,9 @@
       "info_title": "Información de Contacto",
       "info_desc": "¿Tienes un proyecto en mente o una consulta? Estamos listos para ayudarte a construir la solución de software perfecta.",
       "phone": "Teléfono",
+      "email_label": "Correo Electrónico",
+      "linkedin": "LinkedIn",
+      "github": "GitHub",
       "form": {
         "name": "Tu Nombre",
         "name_placeholder": "Juan Pérez",
@@ -47,8 +139,18 @@
         "email_placeholder": "juan@ejemplo.com",
         "inquiry": "Tu Idea / Consulta",
         "inquiry_placeholder": "Cuéntanos sobre tu proyecto o en qué necesitas ayuda...",
+        "requirements": "Requisitos Legales o Normativos",
+        "requirements_placeholder": "Enumere cualquier necesidad de cumplimiento (ej. HIPAA, GDPR)...",
+        "budget": "Presupuesto Estimado",
+        "budget_placeholder": "ej. 5000",
+        "currency": "Moneda",
         "submit": "Enviar Mensaje"
       }
+    },
+    "cta": {
+      "title": "¿Listo para Escalar?",
+      "subtitle": "Construyamos juntos el futuro de las operaciones de su empresa.",
+      "button": "Contáctanos"
     },
     "footer": {
       "copyright": "© 2026 AROS Technologies. Todos los derechos reservados."

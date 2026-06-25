@@ -25,6 +25,7 @@
 .navbar-brand {
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 .navbar-logo {
@@ -36,6 +37,9 @@
 .navbar-links {
   display: flex;
   gap: var(--space-md);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .nav-link {
@@ -43,11 +47,28 @@
   font-weight: 500;
   color: var(--text-primary);
   opacity: 0.8;
+  position: relative;
+  text-decoration: none;
 }
 
-.nav-link:hover {
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: var(--accent-orange);
+  transition: width var(--transition-normal);
+}
+
+.nav-link:hover, .nav-link.active {
   opacity: 1;
   color: var(--accent-orange);
+}
+
+.nav-link:hover::after, .nav-link.active::after {
+  width: 100%;
 }
 
 .navbar-actions {

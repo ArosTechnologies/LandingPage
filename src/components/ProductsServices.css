@@ -1,6 +1,6 @@
 .products-services {
   position: relative;
-  background-color: var(--bg-tertiary);
+  background-color: var(--bg-secondary);
 }
 
 .ps-header {
@@ -18,26 +18,20 @@
 }
 
 .ps-card:hover {
-  transform: translateY(-10px);
-  border-color: rgba(255, 69, 0, 0.5);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transform: translate(-4px, -4px);
+  box-shadow: 6px 6px 0px 0px var(--accent-orange);
+  border-color: var(--accent-orange);
 }
 
 .ps-icon {
   width: 64px;
   height: 64px;
   background: rgba(255, 69, 0, 0.1);
-  /* Hard edge */
   border-radius: 0;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: var(--space-md);
-  transition: transform var(--transition-fast);
-}
-
-.ps-card:hover .ps-icon {
-  transform: scale(1.1);
 }
 
 .ps-title {
@@ -48,4 +42,34 @@
 .ps-description {
   color: var(--text-secondary);
   line-height: 1.7;
+}
+
+.ps-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--accent-orange);
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 1.05rem;
+  margin-top: 2rem; /* Spacing between description and link */
+  position: relative;
+  text-decoration: none;
+  width: fit-content;
+  align-self: flex-start; /* Aligned to the left */
+}
+
+.ps-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: var(--accent-orange);
+  transition: width var(--transition-normal);
+}
+
+.ps-link:hover::after {
+  width: 100%;
 }
