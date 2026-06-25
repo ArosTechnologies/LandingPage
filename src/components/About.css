@@ -9,7 +9,8 @@
   min-height: 75vh;
   display: flex;
   align-items: center;
-  padding-top: 140px;
+  padding-top: 160px;
+  padding-bottom: 80px;
   overflow: hidden;
 }
 
@@ -272,4 +273,13 @@
   font-size: 1.125rem;
   line-height: 1.8;
   color: var(--text-secondary);
+}
+
+/* Mobile Typography Overrides */
+@media (max-width: 768px) {
+  .about-hero-title {
+    font-size: 2.25rem;
+    word-break: break-word;
+    overflow-wrap: anywhere;
+  }
 }
