@@ -1,12 +1,22 @@
 import { useTranslation } from 'react-i18next';
 import { Globe, Menu, X } from 'lucide-react';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import logo from '../../Identity/Logotipos/ISO-HOR-RED.png';
 import './Navbar.css';
 
 const Navbar = () => {
   const { t, i18n } = useTranslation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [currentHash, setCurrentHash] = useState(window.location.hash || '#/');
+
+  useEffect(() => {
+    const handleHashChange = () => {
+      setCurrentHash(window.location.hash || '#/');
+    };
+
+    window.addEventListener('hashchange', handleHashChange);
+    return () => window.removeEventListener('hashchange', handleHashChange);
+  }, []);
 
   const toggleLanguage = () => {
     const newLang = i18n.language === 'en' ? 'es' : 'en';
@@ -14,25 +24,33 @@ const Navbar = () => {
   };
 
   const navLinks = [
-    { label: t('nav.services'), href: '/#services' },
-    { label: t('nav.demos'), href: '#/demos' },
+    { label: t('nav.services'), href: '#/services' },
+    { label: t('nav.demos'), href: '#/products' },
     { label: t('nav.about'), href: '#/about' },
-    { label: t('nav.contact'), href: '/#contact' },
+    { label: t('nav.contact'), href: '#/contact' },
   ];
 
   return (
     <nav className="navbar glass-panel">
       <div className="navbar-container">
-        <a href="/#" className="navbar-brand">
+        <a href="#/" className="navbar-brand">
           <img src={logo} alt="AROS Technologies" className="navbar-logo" />
         </a>
 
         <div className={`navbar-links ${isMenuOpen ? 'active' : ''}`}>
-          {navLinks.map((link) => (
-            <a key={link.label} href={link.href} className="nav-link" onClick={() => setIsMenuOpen(false)}>
-              {link.label}
-            </a>
-          ))}
+          {navLinks.map((link) => {
+            const isActive = currentHash.startsWith(link.href);
+            return (
+              <a 
+                key={link.label} 
+                href={link.href} 
+                className={`nav-link ${isActive ? 'active' : ''}`} 
+                onClick={() => setIsMenuOpen(false)}
+              >
+                {link.label}
+              </a>
+            );
+          })}
         </div>
 
         <div className="navbar-actions">

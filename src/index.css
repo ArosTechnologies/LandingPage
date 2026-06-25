@@ -68,10 +68,15 @@ ul {
 /* Utilities */
 .container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 0 var(--space-md);
 }
+
+.text-center { text-align: center; }
+.mx-auto { margin-left: auto; margin-right: auto; }
+.mt-md { margin-top: var(--space-md); }
+.max-w-3xl { max-width: 800px; }
 
 html {
   scroll-behavior: smooth;

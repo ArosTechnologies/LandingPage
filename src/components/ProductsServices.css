@@ -43,3 +43,33 @@
   color: var(--text-secondary);
   line-height: 1.7;
 }
+
+.ps-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--accent-orange);
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 1.05rem;
+  margin-top: 2rem; /* Spacing between description and link */
+  position: relative;
+  text-decoration: none;
+  width: fit-content;
+  align-self: flex-start; /* Aligned to the left */
+}
+
+.ps-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: var(--accent-orange);
+  transition: width var(--transition-normal);
+}
+
+.ps-link:hover::after {
+  width: 100%;
+}

@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import { Package, Briefcase } from 'lucide-react';
+import { Package, Briefcase, ArrowRight } from 'lucide-react';
 import './ProductsServices.css';
 
 const ProductsServices = () => {
@@ -11,12 +11,16 @@ const ProductsServices = () => {
       icon: <Package size={32} className="text-accent" />,
       title: t('products_services.products.title'),
       description: t('products_services.products.description'),
+      linkText: t('products_services.products.link'),
+      href: '#/products'
     },
     {
       id: 'services',
       icon: <Briefcase size={32} className="text-accent" />,
       title: t('products_services.services.title'),
       description: t('products_services.services.description'),
+      linkText: t('products_services.services.link'),
+      href: '#/services'
     }
   ];
 
@@ -37,6 +41,9 @@ const ProductsServices = () => {
               </div>
               <h3 className="ps-title">{item.title}</h3>
               <p className="ps-description">{item.description}</p>
+              <a href={item.href} className="ps-link">
+                {item.linkText} <ArrowRight size={18} />
+              </a>
             </div>
           ))}
         </div>
