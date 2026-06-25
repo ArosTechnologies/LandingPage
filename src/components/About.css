@@ -128,7 +128,7 @@
   border-color: var(--accent-orange);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .founder-card {
     grid-template-columns: 350px 1fr;
   }
@@ -166,7 +166,7 @@
 }
 
 .founder-info {
-  padding: var(--space-xl);
+  padding: var(--space-lg);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -174,7 +174,7 @@
 
 @media (max-width: 767px) {
   .founder-info {
-    padding: var(--space-lg);
+    padding: var(--space-md);
   }
 }
 

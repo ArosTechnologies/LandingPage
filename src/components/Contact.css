@@ -64,7 +64,10 @@
 .method-detail {
   color: var(--text-secondary);
   font-size: 1.125rem;
+  word-break: break-word;
+  overflow-wrap: anywhere;
 }
+
 
 .contact-form-container {
   padding: var(--space-lg);
@@ -142,4 +145,11 @@ select.form-input option {
   margin-top: var(--space-sm);
   width: 100%;
   justify-content: center;
+}
+
+/* Mobile Overrides */
+@media (max-width: 768px) {
+  .contact-page {
+    padding: 100px 0 3rem 0;
+  }
 }
