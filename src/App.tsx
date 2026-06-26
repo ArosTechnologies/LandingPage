@@ -1,15 +1,17 @@
 import { useState, useEffect } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
+import Clients from './components/Clients';
 import Metrics from './components/Metrics';
 import Benefits from './components/Benefits';
 import ProductsServices from './components/ProductsServices';
 import Process from './components/Process';
-import Demos from './components/Demos';
+import Products from './components/Products';
 import About from './components/About';
 import Contact from './components/Contact';
 import Services from './components/Services';
 import Footer from './components/Footer';
+import ProductPacs from './components/ProductPacs';
 
 import CallToAction from './components/CallToAction';
 
@@ -53,8 +55,11 @@ function App() {
     if (currentHash.startsWith('#/about')) {
       return <About />;
     }
+    if (currentHash.startsWith('#/products/pacs')) {
+      return <ProductPacs />;
+    }
     if (currentHash.startsWith('#/products') || currentHash.startsWith('#/demos')) {
-      return <Demos />; // Temporarily still rendering Demos component for the products page
+      return <Products />; // Temporarily still rendering Products component for the products page
     }
     if (currentHash.startsWith('#/services')) {
       return <Services />;
@@ -65,6 +70,7 @@ function App() {
     return (
       <>
         <Hero />
+        <Clients />
         <Metrics />
         <Benefits />
         <ProductsServices />

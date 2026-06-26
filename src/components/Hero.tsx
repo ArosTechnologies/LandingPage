@@ -136,26 +136,9 @@ const Hero = () => {
             {t('hero.subtitle')}
           </p>
           
-          <div className="hero-cta animate-fade-in delay-300">
-            <button className="btn btn-primary">
-              {t('hero.cta_primary')} <ArrowRight size={20} />
-            </button>
-            <button className="btn btn-secondary">
-              {t('hero.cta_secondary')} <Code size={20} />
-            </button>
-          </div>
         </div>
       </div>
 
-      {/* Ticker Tape Marquee */}
-      <div className="marquee-container">
-        <div className="marquee-content">
-          <span>{t('hero.marquee')}</span>
-          <span>{t('hero.marquee')}</span>
-          <span>{t('hero.marquee')}</span>
-          <span>{t('hero.marquee')}</span>
-        </div>
-      </div>
     </section>
   );
 };

@@ -27,18 +27,20 @@ const Services = () => {
         
         <div className="services-list">
           {Array.isArray(services) && services.map((service, index) => (
-            <a href="#" key={index} className="service-card glass-panel animate-fade-in" style={{ animationDelay: `${index * 100}ms` }}>
-              <div className="service-img-wrapper">
-                <img src={serviceImages[index]} alt={service.title} className="service-img" />
-              </div>
-              <div className="service-content">
-                <h3 className="service-card-title">{service.title}</h3>
-                <p className="service-desc">{service.description}</p>
-                <span className="service-link-text">
-                  Learn More <ArrowRight size={16} />
-                </span>
-              </div>
-            </a>
+            <div key={index} className="animate-fade-in" style={{ animationDelay: `${index * 100}ms` }}>
+              <a href="#" className="service-card glass-panel">
+                <div className="service-img-wrapper">
+                  <img src={serviceImages[index]} alt={service.title} className="service-img" />
+                </div>
+                <div className="service-content">
+                  <h3 className="service-card-title">{service.title}</h3>
+                  <p className="service-desc">{service.description}</p>
+                  <span className="service-link-text">
+                    Learn More <ArrowRight size={16} />
+                  </span>
+                </div>
+              </a>
+            </div>
           ))}
         </div>
       </div>

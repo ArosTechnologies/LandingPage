@@ -2,7 +2,7 @@
   "translation": {
     "nav": {
       "services": "Servicios",
-      "demos": "Productos",
+      "products": "Productos",
       "about": "Nosotros",
       "contact": "Contacto"
     },
@@ -49,31 +49,108 @@
       "step4_title": "04 / Despliegue y Optimización",
       "step4_desc": "Lanzamiento a producción seguido del monitoreo telemétrico, optimización de base de datos y soporte de escalabilidad."
     },
-    "demos": {
-      "title": "Demos Interactivos",
+    "products": {
+      "title": "Nuestros Productos",
       "subtitle": "Experimenta el poder de nuestras soluciones de primera mano.",
+      "coming_soon": "Próximamente",
       "items": [
         {
-          "title": "Medical Dashboard Pro",
-          "description": "Un panel integral de Historia Clínica Electrónica (EHR) con monitoreo de pacientes en tiempo real, transmisión segura de datos y análisis predictivo para la gestión de recursos hospitalarios."
-        },
+          "title": "AROS PACS",
+          "description": "Un sistema integral de Historia Clínica Electrónica (EHR) diseñado para modernizar los flujos de trabajo clínicos y brindar a los pacientes una plataforma profesional y centralizada para visualizar sus estudios médicos.",
+          "learn_more": "Saber más"
+        }
+      ],
+      "edu_items": [
         {
-          "title": "Sistema ERP Empresarial",
-          "description": "Una herramienta de planificación de recursos empresariales altamente escalable adaptada a la manufactura. Incluye seguimiento automatizado de inventario, pronóstico de cadena de suministro e informes financieros."
-        },
-        {
-          "title": "Telehealth Connect",
-          "description": "Una plataforma de videoconsulta que cumple con HIPAA con facturación integrada, recetas digitales y programación automatizada de citas."
-        },
-        {
-          "title": "Optimizador de Rutas Logísticas",
-          "description": "Un sistema de seguimiento logístico impulsado por IA que visualiza movimientos de flotas, optimiza rutas de entrega en tiempo real y reduce el consumo de combustible."
-        },
-        {
-          "title": "Pasarela de Pagos FinTech",
-          "description": "Una pasarela de procesamiento de pagos segura y multidivisa diseñada para transacciones de alto volumen con detección de fraude integrada y cumplimiento normativo."
+          "title": "PohuaScolar",
+          "description": "Una plataforma para que los profesores administren sus clases, escuelas y calificaciones de una manera fácil e intuitiva.",
+          "learn_more": "Saber más"
         }
       ]
+    },
+    "pacs": {
+      "title": "AROS PACS",
+      "description": "Med Cloud es nuestra próxima línea de productos médicos diseñados para revolucionar el sector salud. AROS PACS es el producto estrella de esta suite: un poderoso sistema que permitirá a las clínicas modernizar sus procesos, dando un servicio altamente profesional a los pacientes y ofreciéndoles una plataforma unificada para ver sus estudios médicos. Aprovechando el ecosistema de Med Cloud, también implementa modelos de diagnóstico y predicción de IA para estandarizar la atención médica, permitiendo a clínicas independientes competir directamente con hospitales de primer nivel.",
+      "objectives_title": "Características de la Plataforma",
+      "objectives_intro": "Un ecosistema digital modernizado y adaptado al futuro de la atención médica.",
+      "obj1_title": "Red Médica Global",
+      "obj1_desc": "Conéctese con clínicas y médicos de todo el mundo para crear una red independiente y poderosa. Comparta estudios sin problemas y colabore en diagnósticos sin fronteras.",
+      "obj2_title": "Modelo BYOS (Trae tu propio almacenamiento)",
+      "obj2_desc": "Un modelo escalable y rentable en el que solo pagas por el almacenamiento que utilizas. Conecta tus propios buckets de almacenamiento de AWS y mantén el control total de tus datos.",
+      "obj3_title": "Diagnósticos Asistidos por IA",
+      "obj3_desc": "Empodera a los médicos con modelos predictivos avanzados como herramienta de segunda opinión para diagnósticos más precisos, permitiendo competir con hospitales de primer nivel.",
+      "soon_badge": "PRÓXIMAMENTE",
+      "view_demo": "Ver Demo"
+    },
+    "pacs_pricing": {
+      "title": "Planes y Precios — AROS PACS",
+      "intro_title": "Nuestro Modelo: BYOS (Bring Your Own Storage)",
+      "intro_desc": "Bienvenido a la plataforma PACS más abierta, transparente y segura del mercado. Rompemos con el modelo tradicional de \"secuestro de datos\": con nosotros, tu información médica te pertenece al 100%.",
+      "intro_aws_title": "Tu Cuenta de AWS:",
+      "intro_aws_desc": "Configuramos una cuenta de AWS independiente y dedicada exclusivamente para tu clínica u hospital.",
+      "intro_cost_title": "Costo Real:",
+      "intro_cost_desc": "Tú le pagas directamente a Amazon Web Services (AWS) el costo neto de tus Gigabytes alojados (aproximadamente $0.023 USD por GB en S3). Si tus estudios crecen, tu factura solo aumenta unos centavos.",
+      "intro_lock_title": "Sin Ataduras (No Vendor Lock-in):",
+      "intro_lock_desc": "Si el día de mañana decides dejar de usar nuestra plataforma, simplemente revocamos nuestro software. Te quedas con las llaves de tu cuenta de AWS, todo tu histórico intacto y cero tarifas de rescate o migración.",
+      "plans_title": "Planes Mensuales (Tarifa Plana)",
+      "plans_subtitle": "Elige el plan ideal según el volumen de estudios que procesa tu institución al mes. Todos los planes incluyen usuarios, médicos referentes y estaciones de visualización ILIMITADAS.",
+      "plan1_title": "Emprendedor / Gabinetes Pequeños",
+      "plan1_desc": "Ideal para consultorios de ultrasonido independientes, clínicas dentales o gabinetes de Rayos X de baja demanda.",
+      "plan1_price": "$59",
+      "plan1_volume": "Hasta 300 estudios procesados al mes.",
+      "plan2_title": "Clínico / Centros de Diagnóstico",
+      "plan2_desc": "El preferido del mercado. Diseñado para clínicas medianas con múltiples modalidades operando simultáneamente.",
+      "plan2_price": "$169",
+      "plan2_volume": "Hasta 1,500 estudios procesados al mes.",
+      "plan3_title": "Hospitalario / Alta Demanda",
+      "plan3_desc": "Para hospitales medianos, grandes o laboratorios con múltiples sucursales que realizan Tomografías (CT) y Resonancias (MRI) de forma masiva.",
+      "plan3_price": "$399",
+      "plan3_volume": "Estudios ilimitados.",
+      "table_features": [
+        "Conexión de Modalidades",
+        "Portal de Pacientes",
+        "Visor Web de Diagnóstico",
+        "Soporte Técnico",
+        "Sincronización Local"
+      ],
+      "plan1_f1": "Hasta 2",
+      "plan1_f2": "Incluido",
+      "plan1_f3": "Alta velocidad",
+      "plan1_f4": "Estándar",
+      "plan1_f5": "No",
+      "plan2_f1": "Hasta 5",
+      "plan2_f2": "Incluido",
+      "plan2_f3": "Alta velocidad",
+      "plan2_f4": "Prioritario",
+      "plan2_f5": "No",
+      "plan3_f1": "Ilimitadas",
+      "plan3_f2": "Incluido",
+      "plan3_f3": "Alta velocidad",
+      "plan3_f4": "24/7 y Monitoreo",
+      "plan3_f5": "Avanzada",
+      "benefits_title": "Beneficios Exclusivos (Cero Fricción)",
+      "benefit1_title": "Instalación y Configuración Inicial: $0 USD",
+      "benefit1_desc": "Nos encargamos de estructurar tus buckets de AWS, configurar las políticas de retención, conectar tu nodo DICOM router local y dejar el sistema operando a la perfección sin cobrarte un solo centavo de setup.",
+      "benefit2_title": "Capacitación Completa: $0 USD",
+      "benefit2_desc": "Entrenamos a tus técnicos radiólogos, médicos y administradores para que dominen la plataforma desde el primer día.",
+      "benefit3_title": "Sin Contratos Forzosos",
+      "benefit3_desc": "Paga mes a mes. Estamos tan seguros de la calidad de nuestro software que no te obligamos a firmar permanencias de largo plazo.",
+      "portal_title": "Portal de Pacientes Abierto",
+      "portal_desc": "Creemos que los pacientes merecen acceso fácil a su salud. Nuestra plataforma incluye un Portal de Pacientes centralizado desde donde ellos pueden:",
+      "portal_f1_title": "Visualización Web Ligera:",
+      "portal_f1_desc": "Ver sus imágenes en cualquier smartphone o computadora de forma instantánea sin necesidad de instalar software especializado, consumiendo el mínimo de datos.",
+      "portal_f2_title": "Descarga Libre de DICOM:",
+      "portal_f2_desc": "Descargar el archivo .dcm original y completo totalmente gratis para llevarlo a otros médicos. Gracias a nuestra arquitectura, la descarga se realiza mediante URLs firmadas seguras directamente desde tu AWS, garantizando velocidad y seguridad.",
+      "faq_title": "Preguntas Frecuentes (FAQ)",
+      "faq1_q": "¿Por qué cobran tan barato en comparación con otros PACS?",
+      "faq1_a": "Porque no lucramos con tu almacenamiento. Los PACS tradicionales te cobran una tarifa inflada por cada Gigabyte que guardas con ellos. Nosotros separamos el software de la infraestructura: tú pagas a AWS el costo de almacenamiento más barato del mundo, y a nosotros una tarifa fija por mantener el software actualizado, rápido y seguro.",
+      "faq2_q": "¿Qué pasa si decido cancelar el servicio?",
+      "faq2_a": "Te entregamos las credenciales raíz de tu cuenta de AWS. Cortamos el acceso de nuestro software y tú sigues siendo el dueño absoluto de tu infraestructura y tus imágenes DICOM. No te cobramos nada por salir.",
+      "faq3_q": "¿Quién paga los costos de descarga (Egress) de AWS?",
+      "faq3_a": "Al estar la infraestructura en tu propia cuenta de AWS, las descargas se facturan directamente a tu cuenta bajo las tarifas estándar de AWS (los primeros 100 GB mensuales de salida hacia internet son gratis en Amazon)."
+    },
+    "clients": {
+      "trusted_by": "Instituciones que confían en nosotros:"
     },
     "products_services": {
       "title": "Productos y Servicios",

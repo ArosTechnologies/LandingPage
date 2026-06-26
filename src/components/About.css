@@ -116,9 +116,9 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 0;
-  border: 1px solid var(--glass-border);
+  border: 1px solid var(--border-color);
   background: var(--bg-primary);
-  box-shadow: 6px 6px 0px 0px var(--glass-border);
+  box-shadow: 4px 4px 0px 0px var(--border-color);
   width: 100%;
   transition: all var(--transition-normal);
 }

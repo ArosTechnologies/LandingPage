@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import { Globe, Menu, X } from 'lucide-react';
+import { Globe, Menu, X, ChevronDown } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import logo from '../../Identity/Logotipos/ISO-HOR-RED.png';
 import './Navbar.css';
@@ -7,6 +7,7 @@ import './Navbar.css';
 const Navbar = () => {
   const { t, i18n } = useTranslation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [openDropdown, setOpenDropdown] = useState<string | null>(null);
   const [currentHash, setCurrentHash] = useState(window.location.hash || '#/');
 
   useEffect(() => {
@@ -25,7 +26,13 @@ const Navbar = () => {
 
   const navLinks = [
     { label: t('nav.services'), href: '#/services' },
-    { label: t('nav.demos'), href: '#/products' },
+    { 
+      label: t('nav.products'), 
+      href: '#/products',
+      dropdown: [
+        { label: 'AROS PACS', href: '#/products/pacs' }
+      ]
+    },
     { label: t('nav.about'), href: '#/about' },
     { label: t('nav.contact'), href: '#/contact' },
   ];
@@ -39,16 +46,55 @@ const Navbar = () => {
 
         <div className={`navbar-links ${isMenuOpen ? 'active' : ''}`}>
           {navLinks.map((link) => {
-            const isActive = currentHash.startsWith(link.href);
+            const isActive = currentHash.startsWith(link.href) && link.href !== '#/';
+            const hasDropdown = !!link.dropdown;
+
             return (
-              <a 
+              <div 
                 key={link.label} 
-                href={link.href} 
-                className={`nav-link ${isActive ? 'active' : ''}`} 
-                onClick={() => setIsMenuOpen(false)}
+                className={`nav-item ${hasDropdown ? 'has-dropdown' : ''} ${openDropdown === link.label ? 'dropdown-open' : ''}`}
+                onMouseEnter={() => window.innerWidth > 768 && setOpenDropdown(link.label)}
+                onMouseLeave={() => window.innerWidth > 768 && setOpenDropdown(null)}
               >
-                {link.label}
-              </a>
+                <div className="nav-link-wrapper">
+                  <a 
+                    href={link.href} 
+                    className={`nav-link ${isActive ? 'active' : ''}`} 
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    {link.label}
+                  </a>
+                  {hasDropdown && (
+                    <button 
+                      className="dropdown-toggle"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        setOpenDropdown(openDropdown === link.label ? null : link.label);
+                      }}
+                    >
+                      <ChevronDown size={16} />
+                    </button>
+                  )}
+                </div>
+                {hasDropdown && (
+                  <div className="dropdown-menu glass-panel">
+                    {link.dropdown?.map((dropLink) => (
+                      <a 
+                        key={dropLink.label}
+                        href={dropLink.href}
+                        className="dropdown-link"
+                        onClick={() => {
+                          setIsMenuOpen(false);
+                          setOpenDropdown(null);
+                        }}
+                      >
+                        {dropLink.label}
+                      </a>
+                    ))}
+                  </div>
+                )}
+              </div>
             );
           })}
         </div>

@@ -37,15 +37,17 @@ const About = () => {
             </div>
 
             <div className="team-cards-col">
-              <div className="founder-card glass-panel animate-fade-in">
-                <div className="founder-img-wrapper">
-                  <img src={founderImg} alt={t('about.founder_name')} className="founder-img" />
-                </div>
-                <div className="founder-info">
-                  <span className="founder-badge"><Star size={14} style={{ display: 'inline', marginRight: '4px' }} /> {t('about.founder_title')}</span>
-                  <h3 className="founder-name">{t('about.founder_name')}</h3>
-                  <p className="founder-role">{t('about.founder_role')}</p>
-                  <p className="founder-bio">{t('about.founder_bio')}</p>
+              <div className="animate-fade-in">
+                <div className="founder-card glass-panel">
+                  <div className="founder-img-wrapper">
+                    <img src={founderImg} alt={t('about.founder_name')} className="founder-img" />
+                  </div>
+                  <div className="founder-info">
+                    <span className="founder-badge"><Star size={14} style={{ display: 'inline', marginRight: '4px' }} /> {t('about.founder_title')}</span>
+                    <h3 className="founder-name">{t('about.founder_name')}</h3>
+                    <p className="founder-role">{t('about.founder_role')}</p>
+                    <p className="founder-bio">{t('about.founder_bio')}</p>
+                  </div>
                 </div>
               </div>
             </div>
