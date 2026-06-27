@@ -37,10 +37,7 @@ const Navbar = () => {
     },
     { 
       label: t('nav.products'), 
-      href: '#/products',
-      dropdown: [
-        { label: 'AROS PACS', href: '#/products/pacs' }
-      ]
+      href: '#/products'
     },
     { label: t('nav.about'), href: '#/about' },
     { label: t('nav.contact'), href: '#/contact' },
