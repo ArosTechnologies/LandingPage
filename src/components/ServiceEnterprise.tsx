@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Cloud, Server, ShieldCheck, CheckCircle2 } from 'lucide-react';
 import './ServicePages.css';
 
 const ServiceEnterprise = () => {
@@ -15,31 +15,31 @@ const ServiceEnterprise = () => {
         </div>
 
         <div className="service-content-grid">
-          <div className="service-text-content">
-            <p>{t('service_enterprise.desc1')}</p>
+          <div className="service-text-content animate-fade-in delay-200">
+            <p className="service-lead-text">{t('service_enterprise.desc1')}</p>
             <p>{t('service_enterprise.desc2')}</p>
             
-            <div className="service-deployment-box glass-panel">
-              <h3>{t('service_enterprise.deployment_title')}</h3>
+            <div className="service-deployment-box glass-panel animate-fade-in delay-400">
+              <h3><Server className="text-accent" size={24} /> {t('service_enterprise.deployment_title')}</h3>
               <p style={{ marginBottom: '16px', color: 'var(--text-secondary)' }}>{t('service_enterprise.deployment_desc')}</p>
               <ul>
-                <li>{t('service_enterprise.deploy_cloud')}</li>
-                <li>{t('service_enterprise.deploy_hybrid')}</li>
-                <li>{t('service_enterprise.deploy_local')}</li>
+                <li><Cloud className="list-icon" size={20} /> {t('service_enterprise.deploy_cloud')}</li>
+                <li><Server className="list-icon" size={20} /> {t('service_enterprise.deploy_hybrid')}</li>
+                <li><ShieldCheck className="list-icon" size={20} /> {t('service_enterprise.deploy_local')}</li>
               </ul>
             </div>
           </div>
           
-          <div className="service-image-container glass-panel">
+          <div className="service-image-container glass-panel animate-fade-in delay-600">
             <img 
-              src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80" 
+              src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80" 
               alt={t('service_enterprise.title')} 
             />
           </div>
         </div>
 
         <div className="service-cta-section">
-          <h2 style={{ fontSize: '2.5rem', marginBottom: '24px' }}>Ready to build?</h2>
+          <h2 style={{ fontSize: '2.5rem', marginBottom: '24px' }}>{t('service_enterprise.cta_header')}</h2>
           <a href="#/contact" className="btn btn-primary">
             {t('service_enterprise.cta')} <ArrowRight size={20} />
           </a>

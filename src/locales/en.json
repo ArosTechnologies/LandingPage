@@ -199,6 +199,7 @@
       "deploy_cloud": "Cloud Native: Fully managed, highly available cloud deployment.",
       "deploy_hybrid": "Hybrid: Seamless integration between on-premise systems and cloud infrastructure.",
       "deploy_local": "On-Premise (Local): Secure, air-gapped deployments for maximum data control.",
+      "cta_header": "Ready to build?",
       "cta": "Start Your Project"
     },
     "service_cloud": {
@@ -207,6 +208,9 @@
       "subtitle": "Secure, scalable, and resilient cloud infrastructures built for enterprise demands.",
       "desc1": "As certified AWS Cloud Practitioners, we specialize in seamless cloud migrations. We move your physical, on-premise operations to the AWS Cloud with zero interruption to your daily operations.",
       "desc2": "By transitioning to a modern cloud infrastructure, we drastically reduce your operational risks and infrastructure costs. Our DevSecOps approach ensures security is baked into every layer of the deployment pipeline.",
+      "box_title": "Zero Downtime Migration",
+      "box_desc": "Our certified experts ensure your physical operations move to the cloud securely, reliably, and without interrupting your critical business processes.",
+      "cta_header": "Ready for the Cloud?",
       "cta": "Plan Your Migration"
     },
     "service_legacy": {
@@ -215,6 +219,11 @@
       "desc1": "Running outdated monolithic systems is a liability. We specialize in refactoring and migrating legacy software into modern, scalable architectures.",
       "desc2": "We place a strong emphasis on Linux environments. By migrating to robust Linux-based applications, we ensure your systems are highly adaptable, exceptionally secure, and fully ready to leverage modern hardware.",
       "desc3": "Our modernization process ensures your software is easy to modify, upgrade, and scale for years to come, completely removing vendor lock-in and hardware constraints.",
+      "box_title": "Linux-First Modernization",
+      "box_item1": "Highly adaptable & open environments",
+      "box_item2": "Exceptionally secure architecture",
+      "box_item3": "Ready to leverage modern hardware",
+      "cta_header": "Ready to Modernize?",
       "cta": "Modernize Now"
     },
     "service_hardware": {
@@ -223,6 +232,11 @@
       "desc1": "Generic consumer computers cannot handle professional workloads. We offer specialized hardware selling and custom PC builds tailored exactly to your industry's requirements.",
       "desc2": "Whether you are an architect rendering complex 3D models, a designer working with massive high-resolution files, or a data scientist training local models, we design systems that maximize your productivity.",
       "desc3": "We balance performance with your specific budget, ensuring you get the exact CPU, GPU, and memory configurations needed to eliminate bottlenecks in your workflow.",
+      "box_title": "Purpose-Built Systems",
+      "box_item1": "Architectural rendering & 3D modeling",
+      "box_item2": "High-resolution design workstations",
+      "box_item3": "Local AI & Data Science training rigs",
+      "cta_header": "Ready to Upgrade?",
       "cta": "Get a Custom Quote"
     },
     "about": {

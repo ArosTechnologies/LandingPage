@@ -199,6 +199,7 @@
       "deploy_cloud": "Nativo en la Nube: Implementación en la nube totalmente administrada y de alta disponibilidad.",
       "deploy_hybrid": "Híbrido: Integración perfecta entre sistemas locales (on-premise) y la infraestructura en la nube.",
       "deploy_local": "Local (On-Premise): Implementaciones seguras y aisladas para un control máximo de los datos.",
+      "cta_header": "¿Listo para construir?",
       "cta": "Iniciar Proyecto"
     },
     "service_cloud": {
@@ -207,6 +208,9 @@
       "subtitle": "Infraestructuras en la nube seguras, escalables y resilientes construidas para exigencias empresariales.",
       "desc1": "Como AWS Cloud Practitioners certificados, nos especializamos en migraciones a la nube sin interrupciones. Trasladamos sus operaciones físicas y locales a la nube de AWS sin interrumpir sus operaciones diarias.",
       "desc2": "Al hacer la transición a una infraestructura en la nube moderna, reducimos drásticamente sus riesgos operativos y costos de infraestructura. Nuestro enfoque DevSecOps asegura que la seguridad esté integrada en cada capa del flujo de implementación.",
+      "box_title": "Migración sin tiempo de inactividad",
+      "box_desc": "Nuestros expertos certificados garantizan que sus operaciones físicas se trasladen a la nube de manera segura, confiable y sin interrumpir sus procesos comerciales críticos.",
+      "cta_header": "¿Listo para la Nube?",
       "cta": "Planificar Migración"
     },
     "service_legacy": {
@@ -215,6 +219,11 @@
       "desc1": "Operar sistemas monolíticos obsoletos es un riesgo. Nos especializamos en la refactorización y migración de software heredado hacia arquitecturas modernas y escalables.",
       "desc2": "Ponemos un fuerte énfasis en entornos Linux. Al migrar a aplicaciones robustas basadas en Linux, aseguramos que sus sistemas sean altamente adaptables, excepcionalmente seguros y estén totalmente preparados para aprovechar el hardware moderno.",
       "desc3": "Nuestro proceso de modernización garantiza que su software sea fácil de modificar, actualizar y escalar en el futuro, eliminando por completo la dependencia del proveedor (vendor lock-in) y las limitaciones de hardware.",
+      "box_title": "Modernización enfocada en Linux",
+      "box_item1": "Entornos abiertos y altamente adaptables",
+      "box_item2": "Arquitectura excepcionalmente segura",
+      "box_item3": "Listo para aprovechar el hardware moderno",
+      "cta_header": "¿Listo para Modernizar?",
       "cta": "Modernizar Ahora"
     },
     "service_hardware": {
@@ -223,6 +232,11 @@
       "desc1": "Las computadoras de consumo genéricas no pueden manejar cargas de trabajo profesionales. Ofrecemos venta de hardware especializado y ensamblaje de PCs personalizadas adaptadas exactamente a los requisitos de su industria.",
       "desc2": "Ya sea un arquitecto renderizando modelos 3D complejos, un diseñador trabajando con archivos masivos de alta resolución o un científico de datos entrenando modelos locales, diseñamos sistemas que maximizan su productividad.",
       "desc3": "Equilibramos el rendimiento con su presupuesto específico, asegurando que obtenga las configuraciones exactas de CPU, GPU y memoria necesarias para eliminar cuellos de botella en su flujo de trabajo.",
+      "box_title": "Sistemas construidos a propósito",
+      "box_item1": "Renderizado arquitectónico y modelado 3D",
+      "box_item2": "Estaciones de trabajo de diseño de alta resolución",
+      "box_item3": "Equipos locales para entrenamiento de IA y Ciencia de Datos",
+      "cta_header": "¿Listo para Actualizar?",
       "cta": "Solicitar Cotización"
     },
     "about": {
