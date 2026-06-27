@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import { ArrowRight, Cloud, Server, ShieldCheck, CheckCircle2 } from 'lucide-react';
+import { ArrowRight, Cloud, Server, ShieldCheck } from 'lucide-react';
 import './ServicePages.css';
 
 const ServiceEnterprise = () => {
