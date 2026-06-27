@@ -9,7 +9,14 @@ const Services = () => {
     "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80",
     "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80",
     "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80",
-    "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80"
+    "https://images.unsplash.com/photo-1587202372634-32705e3bf49c?auto=format&fit=crop&w=800&q=80" // Hardware image
+  ];
+
+  const serviceRoutes = [
+    '#/services/enterprise',
+    '#/services/cloud',
+    '#/services/legacy',
+    '#/services/hardware'
   ];
 
   // Cast the translated items to an array of objects
@@ -28,7 +35,7 @@ const Services = () => {
         <div className="services-list">
           {Array.isArray(services) && services.map((service, index) => (
             <div key={index} className="animate-fade-in" style={{ animationDelay: `${index * 100}ms` }}>
-              <a href="#" className="service-card glass-panel">
+              <a href={serviceRoutes[index]} className="service-card glass-panel">
                 <div className="service-img-wrapper">
                   <img src={serviceImages[index]} alt={service.title} className="service-img" />
                 </div>
@@ -36,7 +43,7 @@ const Services = () => {
                   <h3 className="service-card-title">{service.title}</h3>
                   <p className="service-desc">{service.description}</p>
                   <span className="service-link-text">
-                    Learn More <ArrowRight size={16} />
+                    {t('services_page.learn_more')} <ArrowRight size={16} />
                   </span>
                 </div>
               </a>

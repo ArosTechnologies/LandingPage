@@ -1,5 +1,4 @@
 import { useTranslation } from 'react-i18next';
-import { ArrowRight } from 'lucide-react';
 import './Products.css';
 
 const Products = () => {

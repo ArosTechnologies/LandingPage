@@ -168,6 +168,7 @@
     "services_page": {
       "title": "Our Services",
       "subtitle": "Comprehensive engineering solutions tailored to your unique technical and business challenges.",
+      "learn_more": "Learn More",
       "items": [
         {
           "title": "Custom Enterprise Software",
@@ -182,10 +183,47 @@
           "description": "Refactoring and migrating outdated monolithic systems into modern microservices architectures without disrupting your ongoing operations."
         },
         {
-          "title": "Data Engineering & AI Solutions",
-          "description": "Building robust data pipelines, data warehouses, and integrating custom machine learning models to unlock predictive analytics and business intelligence."
+          "title": "Specialized Hardware Selling",
+          "description": "Custom-built, high-performance computing hardware tailored specifically for architects, designers, and specialized enterprise needs."
         }
       ]
+    },
+    "service_enterprise": {
+      "title": "Custom Enterprise Software",
+      "badge": "AWS Cloud Practitioner Certified",
+      "subtitle": "Tailored software solutions designed specifically for your company's unique operations and business logic.",
+      "desc1": "We don't build generic software. We architect custom solutions that map perfectly to your operational workflows. Whether you need a comprehensive ERP, a complex CRM, or a unique internal tool, our software is built to handle it.",
+      "desc2": "Our architecture is fundamentally modular, scalable, and adaptable. We build with future-proofing in mind, ensuring that as your company grows, your software can be easily upgraded and expanded without costly rebuilds.",
+      "deployment_title": "Flexible Deployment Models",
+      "deployment_desc": "We offer implementations that fit your security and infrastructure needs:",
+      "deploy_cloud": "Cloud Native: Fully managed, highly available cloud deployment.",
+      "deploy_hybrid": "Hybrid: Seamless integration between on-premise systems and cloud infrastructure.",
+      "deploy_local": "On-Premise (Local): Secure, air-gapped deployments for maximum data control.",
+      "cta": "Start Your Project"
+    },
+    "service_cloud": {
+      "title": "Cloud Architecture & DevSecOps",
+      "badge": "AWS Cloud Practitioner Certified",
+      "subtitle": "Secure, scalable, and resilient cloud infrastructures built for enterprise demands.",
+      "desc1": "As certified AWS Cloud Practitioners, we specialize in seamless cloud migrations. We move your physical, on-premise operations to the AWS Cloud with zero interruption to your daily operations.",
+      "desc2": "By transitioning to a modern cloud infrastructure, we drastically reduce your operational risks and infrastructure costs. Our DevSecOps approach ensures security is baked into every layer of the deployment pipeline.",
+      "cta": "Plan Your Migration"
+    },
+    "service_legacy": {
+      "title": "Legacy System Modernization",
+      "subtitle": "Future-proof your outdated systems without disrupting your business.",
+      "desc1": "Running outdated monolithic systems is a liability. We specialize in refactoring and migrating legacy software into modern, scalable architectures.",
+      "desc2": "We place a strong emphasis on Linux environments. By migrating to robust Linux-based applications, we ensure your systems are highly adaptable, exceptionally secure, and fully ready to leverage modern hardware.",
+      "desc3": "Our modernization process ensures your software is easy to modify, upgrade, and scale for years to come, completely removing vendor lock-in and hardware constraints.",
+      "cta": "Modernize Now"
+    },
+    "service_hardware": {
+      "title": "Specialized Hardware Solutions",
+      "subtitle": "High-performance computing built specifically for your professional needs.",
+      "desc1": "Generic consumer computers cannot handle professional workloads. We offer specialized hardware selling and custom PC builds tailored exactly to your industry's requirements.",
+      "desc2": "Whether you are an architect rendering complex 3D models, a designer working with massive high-resolution files, or a data scientist training local models, we design systems that maximize your productivity.",
+      "desc3": "We balance performance with your specific budget, ensuring you get the exact CPU, GPU, and memory configurations needed to eliminate bottlenecks in your workflow.",
+      "cta": "Get a Custom Quote"
     },
     "about": {
       "title": "Why AROS Technologies?",

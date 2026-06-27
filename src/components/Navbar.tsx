@@ -25,7 +25,16 @@ const Navbar = () => {
   };
 
   const navLinks = [
-    { label: t('nav.services'), href: '#/services' },
+    { 
+      label: t('nav.services'), 
+      href: '#/services',
+      dropdown: [
+        { label: t('service_enterprise.title'), href: '#/services/enterprise' },
+        { label: t('service_cloud.title'), href: '#/services/cloud' },
+        { label: t('service_legacy.title'), href: '#/services/legacy' },
+        { label: t('service_hardware.title'), href: '#/services/hardware' }
+      ]
+    },
     { 
       label: t('nav.products'), 
       href: '#/products',

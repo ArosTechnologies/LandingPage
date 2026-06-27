@@ -12,6 +12,10 @@ import Contact from './components/Contact';
 import Services from './components/Services';
 import Footer from './components/Footer';
 import ProductPacs from './components/ProductPacs';
+import ServiceEnterprise from './components/ServiceEnterprise';
+import ServiceCloud from './components/ServiceCloud';
+import ServiceLegacy from './components/ServiceLegacy';
+import ServiceHardware from './components/ServiceHardware';
 
 import CallToAction from './components/CallToAction';
 
@@ -61,6 +65,22 @@ function App() {
     if (currentHash.startsWith('#/products') || currentHash.startsWith('#/demos')) {
       return <Products />; // Temporarily still rendering Products component for the products page
     }
+    
+    // Service Detail Pages
+    if (currentHash.startsWith('#/services/enterprise')) {
+      return <ServiceEnterprise />;
+    }
+    if (currentHash.startsWith('#/services/cloud')) {
+      return <ServiceCloud />;
+    }
+    if (currentHash.startsWith('#/services/legacy')) {
+      return <ServiceLegacy />;
+    }
+    if (currentHash.startsWith('#/services/hardware')) {
+      return <ServiceHardware />;
+    }
+    
+    // Fallback Services page
     if (currentHash.startsWith('#/services')) {
       return <Services />;
     }

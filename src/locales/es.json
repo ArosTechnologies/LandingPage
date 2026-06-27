@@ -168,24 +168,62 @@
     "services_page": {
       "title": "Nuestros Servicios",
       "subtitle": "Soluciones de ingeniería integrales adaptadas a sus desafíos técnicos y comerciales únicos.",
+      "learn_more": "Saber más",
       "items": [
         {
           "title": "Software Empresarial a Medida",
-          "description": "Desarrollo de extremo a extremo de aplicaciones web y móviles escalables, seguras y de alta disponibilidad, adaptadas a la lógica exacta de su negocio."
+          "description": "Desarrollo de extremo a extremo de aplicaciones web y móviles escalables, seguras y de alta disponibilidad, adaptadas a su lógica empresarial."
         },
         {
-          "title": "Arquitectura en la Nube y DevSecOps",
-          "description": "Diseño, implementación y gestión de infraestructuras en la nube resilientes en AWS, GCP o Azure con canales automatizados de CI/CD y seguridad integrada."
+          "title": "Arquitectura Cloud y DevSecOps",
+          "description": "Diseño, implementación y gestión de infraestructuras en la nube resilientes en AWS, GCP o Azure con CI/CD automatizado y seguridad integrada."
         },
         {
-          "title": "Modernización de Sistemas Heredados",
-          "description": "Refactorización y migración de sistemas monolíticos obsoletos hacia arquitecturas modernas de microservicios sin interrumpir sus operaciones en curso."
+          "title": "Modernización de Sistemas Legados",
+          "description": "Refactorización y migración de sistemas monolíticos obsoletos hacia arquitecturas modernas de microservicios sin interrumpir sus operaciones."
         },
         {
-          "title": "Ingeniería de Datos y Soluciones de IA",
-          "description": "Construcción de canalizaciones de datos robustas, almacenes de datos e integración de modelos de aprendizaje automático personalizados para desbloquear análisis predictivos."
+          "title": "Venta de Hardware Especializado",
+          "description": "Hardware de alto rendimiento ensamblado a medida, diseñado específicamente para arquitectos, diseñadores y necesidades empresariales especializadas."
         }
       ]
+    },
+    "service_enterprise": {
+      "title": "Software Empresarial a Medida",
+      "badge": "AWS Cloud Practitioner Certified",
+      "subtitle": "Soluciones de software personalizadas diseñadas específicamente para las operaciones únicas de su empresa.",
+      "desc1": "No construimos software genérico. Arquitectamos soluciones personalizadas que se adaptan perfectamente a sus flujos de trabajo operativos. Ya sea que necesite un ERP completo, un CRM complejo o una herramienta interna única, nuestro software está diseñado para manejarlo.",
+      "desc2": "Nuestra arquitectura es fundamentalmente modular, escalable y adaptable. Construimos con el futuro en mente, asegurando que a medida que su empresa crezca, su software pueda ser fácilmente actualizado y expandido sin costosas reconstrucciones.",
+      "deployment_title": "Modelos de Implementación Flexibles",
+      "deployment_desc": "Ofrecemos implementaciones que se adaptan a sus necesidades de seguridad e infraestructura:",
+      "deploy_cloud": "Nativo en la Nube: Implementación en la nube totalmente administrada y de alta disponibilidad.",
+      "deploy_hybrid": "Híbrido: Integración perfecta entre sistemas locales (on-premise) y la infraestructura en la nube.",
+      "deploy_local": "Local (On-Premise): Implementaciones seguras y aisladas para un control máximo de los datos.",
+      "cta": "Iniciar Proyecto"
+    },
+    "service_cloud": {
+      "title": "Arquitectura Cloud y DevSecOps",
+      "badge": "AWS Cloud Practitioner Certified",
+      "subtitle": "Infraestructuras en la nube seguras, escalables y resilientes construidas para exigencias empresariales.",
+      "desc1": "Como AWS Cloud Practitioners certificados, nos especializamos en migraciones a la nube sin interrupciones. Trasladamos sus operaciones físicas y locales a la nube de AWS sin interrumpir sus operaciones diarias.",
+      "desc2": "Al hacer la transición a una infraestructura en la nube moderna, reducimos drásticamente sus riesgos operativos y costos de infraestructura. Nuestro enfoque DevSecOps asegura que la seguridad esté integrada en cada capa del flujo de implementación.",
+      "cta": "Planificar Migración"
+    },
+    "service_legacy": {
+      "title": "Modernización de Sistemas Legados",
+      "subtitle": "Prepare sus sistemas obsoletos para el futuro sin interrumpir su negocio.",
+      "desc1": "Operar sistemas monolíticos obsoletos es un riesgo. Nos especializamos en la refactorización y migración de software heredado hacia arquitecturas modernas y escalables.",
+      "desc2": "Ponemos un fuerte énfasis en entornos Linux. Al migrar a aplicaciones robustas basadas en Linux, aseguramos que sus sistemas sean altamente adaptables, excepcionalmente seguros y estén totalmente preparados para aprovechar el hardware moderno.",
+      "desc3": "Nuestro proceso de modernización garantiza que su software sea fácil de modificar, actualizar y escalar en el futuro, eliminando por completo la dependencia del proveedor (vendor lock-in) y las limitaciones de hardware.",
+      "cta": "Modernizar Ahora"
+    },
+    "service_hardware": {
+      "title": "Soluciones de Hardware Especializado",
+      "subtitle": "Computación de alto rendimiento construida específicamente para sus necesidades profesionales.",
+      "desc1": "Las computadoras de consumo genéricas no pueden manejar cargas de trabajo profesionales. Ofrecemos venta de hardware especializado y ensamblaje de PCs personalizadas adaptadas exactamente a los requisitos de su industria.",
+      "desc2": "Ya sea un arquitecto renderizando modelos 3D complejos, un diseñador trabajando con archivos masivos de alta resolución o un científico de datos entrenando modelos locales, diseñamos sistemas que maximizan su productividad.",
+      "desc3": "Equilibramos el rendimiento con su presupuesto específico, asegurando que obtenga las configuraciones exactas de CPU, GPU y memoria necesarias para eliminar cuellos de botella en su flujo de trabajo.",
+      "cta": "Solicitar Cotización"
     },
     "about": {
       "title": "¿Por qué AROS Technologies?",
