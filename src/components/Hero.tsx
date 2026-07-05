@@ -1,5 +1,4 @@
 import { useTranslation } from 'react-i18next';
-import { Zap } from 'lucide-react';
 import { useEffect, useRef, useState } from 'react';
 import logo from '../../Identity/Logotipos/ISO-HOR-RED.png';
 import './Hero.css';
