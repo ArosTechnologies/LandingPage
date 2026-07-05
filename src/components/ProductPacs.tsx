@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
-import { ArrowRight, Globe, Database, Cpu, Check, ShieldCheck, Download, Smartphone, ChevronDown, ChevronUp } from 'lucide-react';
+import { ArrowRight, Globe, Database, Cpu, Check, ShieldCheck, Download, Smartphone, ChevronDown, ChevronUp, X } from 'lucide-react';
+import SavingsComparison from './SavingsComparison';
 import './ProductPacs.css';
 
 const ProductPacs = () => {
@@ -180,8 +181,12 @@ const ProductPacs = () => {
               </div>
             </div>
           </div>
+        </div>
+      </section>
 
-          <div className="text-center mt-xl mb-xl">
+      <section className="pacs-monthly-plans-section" style={{ padding: '80px 0' }}>
+        <div className="container">
+          <div className="text-center mb-xl">
             <h2 className="section-title text-gradient" style={{ fontSize: '2.5rem' }}>{t('pacs_pricing.plans_title')}</h2>
             <p className="section-subtitle" style={{ fontSize: '1.25rem' }}>{t('pacs_pricing.plans_subtitle')}</p>
           </div>
@@ -201,16 +206,16 @@ const ProductPacs = () => {
                     <h3 className="table-plan-title">{t('pacs_pricing.plan1_title')}</h3>
                     <div className="table-plan-price-wrapper">
                       <span className="table-plan-price">{t('pacs_pricing.plan1_price')}</span>
-                      <span className="table-plan-period">/ mes</span>
+                      <span className="table-plan-period">{t('pacs_pricing.per_month')}</span>
                     </div>
                     <p className="table-plan-desc">{t('pacs_pricing.plan1_desc')}</p>
                   </th>
                   <th className="plan-col-header highlighted-col-header">
-                    <div className="table-popular-badge">Recomendado</div>
+                    <div className="table-popular-badge">{t('pacs_pricing.recommended')}</div>
                     <h3 className="table-plan-title">{t('pacs_pricing.plan2_title')}</h3>
                     <div className="table-plan-price-wrapper">
                       <span className="table-plan-price">{t('pacs_pricing.plan2_price')}</span>
-                      <span className="table-plan-period">/ mes</span>
+                      <span className="table-plan-period">{t('pacs_pricing.per_month')}</span>
                     </div>
                     <p className="table-plan-desc">{t('pacs_pricing.plan2_desc')}</p>
                   </th>
@@ -218,51 +223,43 @@ const ProductPacs = () => {
                     <h3 className="table-plan-title">{t('pacs_pricing.plan3_title')}</h3>
                     <div className="table-plan-price-wrapper">
                       <span className="table-plan-price">{t('pacs_pricing.plan3_price')}</span>
-                      <span className="table-plan-period">/ mes</span>
+                      <span className="table-plan-period">{t('pacs_pricing.per_month')}</span>
                     </div>
                     <p className="table-plan-desc">{t('pacs_pricing.plan3_desc')}</p>
                   </th>
                 </tr>
               </thead>
               <tbody>
-                {/* Modalities */}
-                <tr>
-                  <td className="feature-label">{(t('pacs_pricing.table_features', { returnObjects: true }) as string[])[0]}</td>
-                  <td className="plan-cell">{t('pacs_pricing.plan1_f1')}</td>
-                  <td className="plan-cell highlighted-cell">{t('pacs_pricing.plan2_f1')}</td>
-                  <td className="plan-cell">{t('pacs_pricing.plan3_f1')}</td>
-                </tr>
-                {/* Patient Portal */}
-                <tr>
-                  <td className="feature-label">{(t('pacs_pricing.table_features', { returnObjects: true }) as string[])[1]}</td>
-                  <td className="plan-cell">{t('pacs_pricing.plan1_f2')}</td>
-                  <td className="plan-cell highlighted-cell">{t('pacs_pricing.plan2_f2')}</td>
-                  <td className="plan-cell">{t('pacs_pricing.plan3_f2')}</td>
-                </tr>
-                {/* Web Viewer */}
-                <tr>
-                  <td className="feature-label">{(t('pacs_pricing.table_features', { returnObjects: true }) as string[])[2]}</td>
-                  <td className="plan-cell">{t('pacs_pricing.plan1_f3')}</td>
-                  <td className="plan-cell highlighted-cell">{t('pacs_pricing.plan2_f3')}</td>
-                  <td className="plan-cell">{t('pacs_pricing.plan3_f3')}</td>
-                </tr>
-                {/* Support */}
-                <tr>
-                  <td className="feature-label">{(t('pacs_pricing.table_features', { returnObjects: true }) as string[])[3]}</td>
-                  <td className="plan-cell">{t('pacs_pricing.plan1_f4')}</td>
-                  <td className="plan-cell highlighted-cell">{t('pacs_pricing.plan2_f4')}</td>
-                  <td className="plan-cell">{t('pacs_pricing.plan3_f4')}</td>
-                </tr>
-                {/* Local Sync */}
-                <tr>
-                  <td className="feature-label">{(t('pacs_pricing.table_features', { returnObjects: true }) as string[])[4]}</td>
-                  <td className="plan-cell">{t('pacs_pricing.plan1_f5')}</td>
-                  <td className="plan-cell highlighted-cell">{t('pacs_pricing.plan2_f5')}</td>
-                  <td className="plan-cell">{t('pacs_pricing.plan3_f5')}</td>
-                </tr>
+                {/* Dynamically render 12 features */}
+                {Array.from({ length: 12 }).map((_, idx) => {
+                  const featureName = (t('pacs_pricing.table_features', { returnObjects: true }) as string[])[idx];
+                  if (!featureName) return null;
+                  
+                  const renderCell = (val: string) => {
+                    if (val === 'check') return <Check size={20} style={{ color: 'var(--color-primary, #2563eb)' }} />;
+                    if (val === 'cross') return <X size={20} style={{ color: 'var(--text-secondary, #6b7280)', opacity: 0.5 }} />;
+                    return val;
+                  };
+
+                  return (
+                    <tr key={idx}>
+                      <td className="feature-label">{featureName}</td>
+                      <td className="plan-cell">{renderCell(t(`pacs_pricing.plan1_f${idx + 1}`))}</td>
+                      <td className="plan-cell highlighted-cell">{renderCell(t(`pacs_pricing.plan2_f${idx + 1}`))}</td>
+                      <td className="plan-cell">{renderCell(t(`pacs_pricing.plan3_f${idx + 1}`))}</td>
+                    </tr>
+                  );
+                })}
               </tbody>
             </table>
           </div>
+        </div>
+      </section>
+
+      {/* Savings Chart Section */}
+      <section className="savings-chart-section" style={{ padding: '100px 0' }}>
+        <div className="container">
+          <SavingsComparison />
         </div>
       </section>
 

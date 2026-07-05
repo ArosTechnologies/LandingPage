@@ -1,0 +1,209 @@
+.savings-comparison-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0;
+  background: transparent;
+}
+
+.savings-comparison-header {
+  margin-bottom: var(--space-xl);
+  text-align: center;
+}
+
+.savings-comparison-title {
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  font-weight: 700;
+  margin-bottom: var(--space-sm);
+  color: var(--text-primary);
+}
+
+.savings-comparison-subtitle {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Card Styling */
+.savings-comparison-card {
+  padding: 0 var(--space-md);
+}
+
+/* Volume Selector */
+.volume-selector-container {
+  margin-bottom: 40px;
+}
+
+.volume-selector-label {
+  font-weight: 700;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.85rem;
+  margin-bottom: var(--space-md);
+  text-align: center;
+}
+
+.volume-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.volume-pill {
+  padding: 10px 24px;
+  border-radius: 0;
+  background: #f3f4f6;
+  border: 1px solid transparent;
+  color: #4b5563;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.volume-pill:hover {
+  background: #e5e7eb;
+}
+
+.volume-pill.active {
+  background: rgba(255, 69, 0, 0.1);
+  color: var(--accent-orange, #ff4500);
+  border-color: rgba(255, 69, 0, 0.3);
+  box-shadow: 0 4px 10px -2px rgba(255, 69, 0, 0.15);
+}
+
+/* Horizontal Bars */
+.comparison-bars-container {
+  margin-bottom: 40px;
+}
+
+.bar-row {
+  margin-bottom: var(--space-lg);
+}
+
+.bar-row:last-child {
+  margin-bottom: 0;
+}
+
+.bar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: var(--space-xs);
+}
+
+.bar-title {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--text-primary);
+}
+
+.bar-desc {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  margin-left: 10px;
+  font-weight: 500;
+}
+
+.bar-price {
+  font-weight: 800;
+  font-size: 1.3rem;
+  font-family: var(--font-heading);
+}
+
+.bar-track {
+  width: 100%;
+  height: 24px;
+  background: #f3f4f6;
+  border-radius: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.bar-fill {
+  height: 100%;
+  border-radius: 0;
+  transition: width 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+  position: relative;
+}
+
+.bar-fill::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.2) 100%);
+}
+
+.bar-comp .bar-title { color: #6b7280; }
+.bar-comp .bar-price { color: #4b5563; }
+.bar-comp .bar-fill { background: #9ca3af; }
+
+.bar-aros .bar-title { color: var(--accent-orange, #ff4500); }
+.bar-aros .bar-price { color: var(--accent-orange, #ff4500); }
+.bar-aros .bar-fill { background: var(--accent-orange, #ff4500); }
+.bar-aros .bar-track { background: rgba(255, 69, 0, 0.05); }
+
+
+/* Savings Hero */
+.savings-hero {
+  text-align: center;
+  padding-top: var(--space-xl);
+  border-top: 1px dashed var(--border-color, #e5e7eb);
+}
+
+.savings-hero-label {
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #10b981;
+  font-size: 1rem;
+  margin-bottom: var(--space-xs);
+}
+
+.savings-hero-amount {
+  font-family: var(--font-heading);
+  font-size: clamp(3rem, 6vw, 4.5rem);
+  font-weight: 800;
+  color: #10b981;
+  line-height: 1;
+  margin-bottom: var(--space-xs);
+  text-shadow: 0 10px 30px rgba(16, 185, 129, 0.2);
+}
+
+.savings-hero-desc {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+  .savings-comparison-card {
+    padding: var(--space-lg);
+  }
+  
+  .bar-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .bar-price {
+    margin-top: 4px;
+    align-self: flex-start;
+  }
+  
+  .volume-pills {
+    gap: 8px;
+  }
+  
+  .volume-pill {
+    padding: 8px 14px;
+    font-size: 0.85rem;
+  }
+}

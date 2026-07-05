@@ -19,6 +19,21 @@ const Navbar = () => {
     return () => window.removeEventListener('hashchange', handleHashChange);
   }, []);
 
+  // Lock body scroll when mobile menu is open
+  useEffect(() => {
+    if (isMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+      setOpenDropdown(null);
+    }
+    
+    // Cleanup on unmount
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [isMenuOpen]);
+
   const toggleLanguage = () => {
     const newLang = i18n.language === 'en' ? 'es' : 'en';
     i18n.changeLanguage(newLang);
@@ -49,6 +64,10 @@ const Navbar = () => {
         <a href="#/" className="navbar-brand">
           <img src={logo} alt="AROS Technologies" className="navbar-logo" />
         </a>
+        <div 
+          className={`mobile-menu-overlay ${isMenuOpen ? 'active' : ''}`} 
+          onClick={() => setIsMenuOpen(false)} 
+        />
 
         <div className={`navbar-links ${isMenuOpen ? 'active' : ''}`}>
           {navLinks.map((link) => {

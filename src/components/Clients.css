@@ -17,10 +17,12 @@
 
 .marquee-wrapper {
   width: 100%;
+  text-align: center;
 }
 
 .clients-list {
-  display: flex;
+  display: inline-flex;
+  max-width: 100%;
   overflow-x: auto;
   align-items: center;
   gap: var(--space-lg);
@@ -46,6 +48,8 @@
   justify-content: center;
   box-shadow: 4px 4px 0px 0px var(--glass-border, rgba(0,0,0,0.1));
   transition: all var(--transition-fast);
+  text-decoration: none;
+  color: var(--text-primary);
 }
 
 .client-logo-card:hover {

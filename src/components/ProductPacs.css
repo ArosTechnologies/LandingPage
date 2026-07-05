@@ -265,9 +265,14 @@
 
 /* Pricing Section */
 .pacs-pricing-section {
-  padding: 120px 0;
+  padding: 120px 0 0 0;
   background-color: var(--bg-primary);
+}
+
+.pacs-monthly-plans-section {
+  background-color: var(--bg-tertiary);
   border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
 }
 
 .pricing-intro-list {
@@ -321,8 +326,6 @@
   width: 100%;
   overflow-x: auto;
   margin-top: var(--space-xl);
-  display: flex;
-  justify-content: center;
   padding-top: 30px;
 }
 
@@ -330,6 +333,7 @@
   width: 100%;
   max-width: 1150px;
   min-width: 900px;
+  margin: 0 auto;
   border-collapse: collapse;
   text-align: left;
 }
@@ -471,7 +475,7 @@
 
 /* Zebra Striping for Rows */
 .pricing-table tbody tr:nth-child(even) td {
-  background-color: rgba(255, 255, 255, 0.015);
+  background-color: rgba(0, 0, 0, 0.03);
 }
 .pricing-table tbody tr:nth-child(even) td.highlighted-col {
   background-color: rgba(255, 69, 0, 0.05); /* Keeps the middle column highlighted slightly stronger on even rows */

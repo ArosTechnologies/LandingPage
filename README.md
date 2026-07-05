@@ -4,7 +4,7 @@
 
 This repository contains the source code for the official AROS Technologies corporate landing page. Built with performance, accessibility, and modern aesthetics in mind, this site serves as the digital storefront for our enterprise software solutions.
 
-## 🚀 Tech Stack
+## Tech Stack
 
 - **Framework:** [React 18](https://reactjs.org/) + [Vite](https://vitejs.dev/)
 - **Language:** [TypeScript](https://www.typescriptlang.org/)
@@ -13,7 +13,7 @@ This repository contains the source code for the official AROS Technologies corp
 - **Icons:** [Lucide React](https://lucide.dev/)
 - **CI/CD:** GitHub Actions -> GoDaddy cPanel FTP Deployment
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 ├── .github/workflows/      # Automated deployment pipelines (GoDaddy FTP)
@@ -36,7 +36,7 @@ This repository contains the source code for the official AROS Technologies corp
 │   └── main.tsx            # Application entry point
 ```
 
-## 🛠️ Local Development
+## Local Development
 
 1. **Install Dependencies:**
    ```bash
@@ -55,7 +55,7 @@ This repository contains the source code for the official AROS Technologies corp
    ```
    *Compiles a highly optimized bundle into the `/dist` directory.*
 
-## 🌍 Localization (i18n)
+## Localization (i18n)
 
 The site natively supports English and Spanish. To modify text, update the JSON files located in `src/locales/`. The translation keys are deeply nested to keep component text organized.
 
@@ -67,7 +67,7 @@ Example:
 }
 ```
 
-## 🚢 Automated Deployment
+## Automated Deployment
 
 This project uses **GitHub Actions** for CI/CD. 
 Whenever code is pushed or merged into the `main` branch, the `Deploy to GoDaddy cPanel` workflow automatically runs.

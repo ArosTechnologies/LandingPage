@@ -64,7 +64,8 @@ const Hero = () => {
             containerRef.current.style.opacity = `${Math.max(1 - sy / 450, 0)}`;
           }
           if (logoFilledRef.current) {
-            const fillPercent = Math.min((sy / 500) * 100, 100);
+            // Start at 25% to skip the transparent padding at the bottom of the image
+            const fillPercent = Math.min(25 + (sy / 350) * 75, 100);
             logoFilledRef.current.style.clipPath = `inset(${100 - fillPercent}% 0 0 0)`;
             if (logoEmptyRef.current) {
               logoEmptyRef.current.style.clipPath = `inset(0 0 ${fillPercent}% 0)`;
@@ -121,10 +122,6 @@ const Hero = () => {
         className="container hero-container"
       >
         <div className="hero-content">
-          <div className="hero-badge animate-fade-in">
-            <Zap size={16} className="text-accent" />
-            <span>AROS TECHNOLOGIES</span>
-          </div>
           
           <h1 className="hero-title animate-fade-in delay-100">
             {t('hero.title_line1')}<br/>

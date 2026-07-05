@@ -4,9 +4,9 @@ import './Clients.css';
 const Clients = () => {
   const { t } = useTranslation();
 
-  // 5 slots so the manual scrolling is immediately obvious
-  const clientNames = [
-    "RadiographXpress"
+  const clientsData = [
+    { name: "RadiographXpress", url: "https://radiographxpress.com.mx/" },
+    { name: "CAPA(S) Arquitectura" }
   ];
 
   return (
@@ -16,11 +16,26 @@ const Clients = () => {
       </div>
       <div className="marquee-wrapper">
         <div className="clients-list">
-          {clientNames.map((name, i) => (
-            <div key={i} className="client-logo-card">
-              <span className="client-logo-placeholder">{name}</span>
-            </div>
-          ))}
+          {clientsData.map((client, i) => {
+            if (client.url) {
+              return (
+                <a 
+                  key={i} 
+                  href={client.url} 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="client-logo-card"
+                >
+                  <span className="client-logo-placeholder">{client.name}</span>
+                </a>
+              );
+            }
+            return (
+              <div key={i} className="client-logo-card">
+                <span className="client-logo-placeholder">{client.name}</span>
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>
