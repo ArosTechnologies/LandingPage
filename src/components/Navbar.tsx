@@ -52,7 +52,10 @@ const Navbar = () => {
     },
     { 
       label: t('nav.products'), 
-      href: '#/products'
+      href: '#/products',
+      // dropdown: [
+      //   { label: 'AROS PACS', href: '#/products/pacs' }
+      // ]
     },
     { label: t('nav.about'), href: '#/about' },
     { label: t('nav.contact'), href: '#/contact' },
@@ -62,7 +65,7 @@ const Navbar = () => {
     <nav className="navbar glass-panel">
       <div className="navbar-container">
         <a href="#/" className="navbar-brand">
-          <img src={logo} alt="AROS Technologies" className="navbar-logo" />
+          <img src={logo} alt="AROS" className="navbar-logo" />
         </a>
         <div 
           className={`mobile-menu-overlay ${isMenuOpen ? 'active' : ''}`} 

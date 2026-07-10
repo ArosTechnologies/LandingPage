@@ -39,7 +39,7 @@ const ServiceLegacy = () => {
 
         <div className="service-cta-section">
           <h2 style={{ fontSize: '2.5rem', marginBottom: '24px' }}>{t('service_legacy.cta_header')}</h2>
-          <a href="#/contact" className="btn btn-primary">
+          <a href="#/contact?interest=Legacy%20System%20Modernization" className="btn btn-primary">
             {t('service_legacy.cta')} <ArrowRight size={20} />
           </a>
         </div>

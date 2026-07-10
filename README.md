@@ -1,8 +1,8 @@
-# AROS Technologies - Corporate Website
+# AROS - Corporate Website
 
-![AROS Technologies](public/favicon.svg)
+![AROS](public/favicon.svg)
 
-This repository contains the source code for the official AROS Technologies corporate landing page. Built with performance, accessibility, and modern aesthetics in mind, this site serves as the digital storefront for our enterprise software solutions.
+This repository contains the source code for the official AROS corporate landing page. Built with performance, accessibility, and modern aesthetics in mind, this site serves as the digital storefront for our enterprise software solutions.
 
 ## Tech Stack
 
@@ -84,4 +84,4 @@ It executes the following sequence:
 - `FTP_PASSWORD`
 
 ---
-*© 2026 AROS Technologies. All rights reserved.*
+*© 2026 AROS. All rights reserved.*

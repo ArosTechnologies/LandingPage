@@ -10,7 +10,7 @@
       "title_line1": "EMPOWERING",
       "title_line2": "YOUR BUSINESS",
       "title_highlight": "WITH TECHNOLOGY.",
-      "subtitle": "AROS Technologies specializes in crafting cutting-edge medical and business software to elevate your operations to the next level.",
+      "subtitle": "AROS specializes in crafting cutting-edge medical and business software to elevate your operations to the next level.",
       "cta_primary": "Get Started",
       "cta_secondary": "Learn More",
       "marquee": "MEDICAL SOFTWARE \u00A0\u00A0\u00A0 ✦ \u00A0\u00A0\u00A0 BUSINESS SOLUTIONS \u00A0\u00A0\u00A0 ✦ \u00A0\u00A0\u00A0 CUSTOM DEVELOPMENT \u00A0\u00A0\u00A0 ✦ \u00A0\u00A0\u00A0"
@@ -176,6 +176,7 @@
       "chart_comp_line": "Competition ($1.83/study)",
       "chart_aros_line": "AROS (Subscription + AWS)",
       "per_month": "/ mo",
+      "disclaimer": "* Prices are expressed in US Dollars (USD) and do not include VAT.",
       "recommended": "Recommended",
       "portal_title": "MediKali",
       "portal_desc": "We believe patients deserve easy access to their health. Our platform includes MediKali, our open patient portal, from where they can:",
@@ -282,7 +283,7 @@
       "cta": "Get a Custom Quote"
     },
     "about": {
-      "title": "Why AROS Technologies?",
+      "title": "Why AROS?",
       "description": "We are a team of dedicated engineers and designers focused on delivering premium software experiences tailored to your unique industry challenges.",
       "team_title": "Meet the Team",
       "team_subtitle": "The experts behind the code.",
@@ -291,7 +292,7 @@
       "founder_role": "Founder & Software Engineer",
       "founder_bio": "Passionate about building robust, high-performance, and elegant software solutions for business and medical industries.",
       "history_title": "Our Background",
-      "history_p1": "AROS Technologies started with a vision to revolutionize how businesses operate by leveraging modern, secure, and highly scalable software architecture.",
+      "history_p1": "AROS started with a vision to revolutionize how businesses operate by leveraging modern, secure, and highly scalable software architecture.",
       "history_p2": "We are dedicated to continuous innovation, ensuring our clients stay ahead of the curve in an increasingly digital landscape. This space will be updated with more of our story soon."
     },
     "contact": {
@@ -310,6 +311,9 @@
         "email_placeholder": "john@example.com",
         "inquiry": "Your Idea / Inquiry",
         "inquiry_placeholder": "Tell us about your project or what you need help with...",
+        "interest": "Product or Service of Interest",
+        "interest_placeholder": "Select an option...",
+        "interest_other": "Other",
         "requirements": "Regulatory or Legal Requirements",
         "requirements_placeholder": "List any compliance needs (e.g., HIPAA, GDPR)...",
         "budget": "Estimated Budget",
@@ -324,7 +328,7 @@
       "button": "Get in Touch"
     },
     "footer": {
-      "copyright": "© 2026 AROS Technologies. All rights reserved."
+      "copyright": "© 2026 AROS. All rights reserved."
     }
   }
 }

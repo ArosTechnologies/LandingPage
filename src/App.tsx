@@ -59,9 +59,9 @@ function App() {
     if (currentHash.startsWith('#/about')) {
       return <About />;
     }
-    if (currentHash.startsWith('#/products/pacs')) {
-      return <ProductPacs />;
-    }
+    // if (currentHash.startsWith('#/products/pacs')) {
+    //   return <ProductPacs />;
+    // }
     if (currentHash.startsWith('#/products') || currentHash.startsWith('#/demos')) {
       return <Products />; // Temporarily still rendering Products component for the products page
     }

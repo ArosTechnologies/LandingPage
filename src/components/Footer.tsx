@@ -9,7 +9,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="container footer-container">
         <div className="footer-brand">
-          <img src={logo} alt="AROS Technologies" className="footer-logo" />
+          <img src={logo} alt="AROS" className="footer-logo" />
         </div>
         <div className="footer-copyright">
           <p>{t('footer.copyright')}</p>

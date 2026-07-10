@@ -71,7 +71,7 @@ const ProductPacs = () => {
               {t('pacs.description')}
             </p>
             <div className="product-actions-centered">
-              <a href="#/contact" className="btn btn-primary btn-large">
+              <a href="#/contact?interest=AROS%20PACS" className="btn btn-primary btn-large">
                 {t('pacs.view_demo')} <ArrowRight size={20} />
               </a>
             </div>
@@ -253,6 +253,15 @@ const ProductPacs = () => {
               </tbody>
             </table>
           </div>
+          
+          <div className="pricing-disclaimer" style={{ 
+            textAlign: 'center', 
+            marginTop: '1.5rem', 
+            color: 'var(--text-secondary)', 
+            fontSize: '0.85rem' 
+          }}>
+            {t('pacs_pricing.disclaimer')}
+          </div>
         </div>
       </section>
 
@@ -364,7 +373,7 @@ const ProductPacs = () => {
           <p className="lead-text mb-lg">
             {t('cta.subtitle')}
           </p>
-          <a href="#/contact" className="btn btn-primary btn-large">
+          <a href="#/contact?interest=AROS%20PACS" className="btn btn-primary btn-large">
             {t('cta.button')} <ArrowRight size={20} />
           </a>
         </div>

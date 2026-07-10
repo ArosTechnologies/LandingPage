@@ -5,7 +5,7 @@ const Clients = () => {
   const { t } = useTranslation();
 
   const clientsData = [
-    { name: "RadiographXpress", url: "https://radiographxpress.com.mx/" },
+    // { name: "RadiographXpress", url: "https://radiographxpress.com.mx/" },
     { name: "CAPA(S) Arquitectura" }
   ];
 

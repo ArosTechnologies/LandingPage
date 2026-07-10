@@ -10,7 +10,7 @@
       "title_line1": "POTENCIAMOS",
       "title_line2": "TU NEGOCIO",
       "title_highlight": "CON TECNOLOGÍA.",
-      "subtitle": "AROS Technologies se especializa en la creación de software médico y empresarial de vanguardia para llevar tus operaciones al siguiente nivel.",
+      "subtitle": "AROS se especializa en la creación de software médico y empresarial de vanguardia para llevar tus operaciones al siguiente nivel.",
       "cta_primary": "Comenzar",
       "cta_secondary": "Saber Más",
       "marquee": "SOFTWARE MÉDICO \u00A0\u00A0\u00A0 ✦ \u00A0\u00A0\u00A0 SOLUCIONES EMPRESARIALES \u00A0\u00A0\u00A0 ✦ \u00A0\u00A0\u00A0 DESARROLLO A MEDIDA \u00A0\u00A0\u00A0 ✦ \u00A0\u00A0\u00A0"
@@ -176,6 +176,7 @@
       "chart_comp_line": "Competencia ($1.83/estudio)",
       "chart_aros_line": "AROS (Suscripción + AWS)",
       "per_month": "/ mes",
+      "disclaimer": "* Precios expresados en dólares estadounidenses (USD) y no incluyen IVA.",
       "recommended": "Recomendado",
       "portal_title": "MediKali",
       "portal_desc": "Creemos que los pacientes merecen acceso fácil a su salud. Nuestra plataforma incluye MediKali, nuestro portal de pacientes abierto, desde donde ellos pueden:",
@@ -282,7 +283,7 @@
       "cta": "Solicitar Cotización"
     },
     "about": {
-      "title": "¿Por qué AROS Technologies?",
+      "title": "¿Por qué AROS?",
       "description": "Somos un equipo de ingenieros y diseñadores dedicados a ofrecer experiencias de software premium, adaptadas a los desafíos únicos de tu industria.",
       "team_title": "Conoce al Equipo",
       "team_subtitle": "Los expertos detrás del código.",
@@ -291,7 +292,7 @@
       "founder_role": "Fundador e Ingeniero de Software",
       "founder_bio": "Apasionado por construir soluciones de software robustas, elegantes y de alto rendimiento para las industrias empresarial y médica.",
       "history_title": "Nuestra Historia",
-      "history_p1": "AROS Technologies comenzó con la visión de revolucionar la forma en que operan las empresas aprovechando una arquitectura de software moderna, segura y altamente escalable.",
+      "history_p1": "AROS comenzó con la visión de revolucionar la forma en que operan las empresas aprovechando una arquitectura de software moderna, segura y altamente escalable.",
       "history_p2": "Estamos dedicados a la innovación continua, asegurando que nuestros clientes se mantengan a la vanguardia en el panorama digital. Este espacio se actualizará pronto con más detalles de nuestra historia."
     },
     "contact": {
@@ -310,6 +311,9 @@
         "email_placeholder": "juan@ejemplo.com",
         "inquiry": "Tu Idea / Consulta",
         "inquiry_placeholder": "Cuéntanos sobre tu proyecto o en qué necesitas ayuda...",
+        "interest": "Producto o Servicio de Interés",
+        "interest_placeholder": "Selecciona una opción...",
+        "interest_other": "Otro",
         "requirements": "Requisitos Legales o Normativos",
         "requirements_placeholder": "Enumere cualquier necesidad de cumplimiento (ej. HIPAA, GDPR)...",
         "budget": "Presupuesto Estimado",
@@ -324,7 +328,7 @@
       "button": "Contáctanos"
     },
     "footer": {
-      "copyright": "© 2026 AROS Technologies. Todos los derechos reservados."
+      "copyright": "© 2026 AROS. Todos los derechos reservados."
     }
   }
 }

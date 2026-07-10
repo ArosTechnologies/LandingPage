@@ -2,9 +2,24 @@ import { useTranslation } from 'react-i18next';
 import { Send, Phone, Mail } from 'lucide-react';
 import './Contact.css';
 
+import { useState, useEffect } from 'react';
 
 const Contact = () => {
   const { t } = useTranslation();
+  const [interest, setInterest] = useState('');
+
+  useEffect(() => {
+    // Parse interest from hash e.g., #/contact?interest=aros_pacs
+    const hash = window.location.hash;
+    if (hash.includes('?')) {
+      const queryString = hash.split('?')[1];
+      const params = new URLSearchParams(queryString);
+      const interestParam = params.get('interest');
+      if (interestParam) {
+        setInterest(interestParam);
+      }
+    }
+  }, []);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -59,6 +74,26 @@ const Contact = () => {
               <div className="form-group">
                 <label htmlFor="email" className="form-label">{t('contact.form.email')}</label>
                 <input type="email" id="email" className="form-input" required placeholder={t('contact.form.email_placeholder')} />
+              </div>
+
+              <div className="form-group">
+                <label htmlFor="interest" className="form-label">{t('contact.form.interest', 'Product or Service of Interest')}</label>
+                <select 
+                  id="interest" 
+                  className="form-input" 
+                  value={interest} 
+                  onChange={(e) => setInterest(e.target.value)}
+                  required
+                >
+                  <option value="" disabled>{t('contact.form.interest_placeholder', 'Select an option...')}</option>
+                  <option value="AROS PACS">AROS PACS</option>
+                  <option value="PohuaScolar">PohuaScolar</option>
+                  <option value="Custom Enterprise Software">{t('services_page.items.0.title', 'Custom Enterprise Software')}</option>
+                  <option value="Cloud Architecture & DevSecOps">{t('services_page.items.1.title', 'Cloud Architecture & DevSecOps')}</option>
+                  <option value="Legacy System Modernization">{t('services_page.items.2.title', 'Legacy System Modernization')}</option>
+                  <option value="Specialized Hardware Selling">{t('services_page.items.3.title', 'Specialized Hardware Selling')}</option>
+                  <option value="Other">{t('contact.form.interest_other', 'Other')}</option>
+                </select>
               </div>
 
               <div className="form-group-row">
