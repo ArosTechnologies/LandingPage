@@ -4,7 +4,7 @@ import './Clients.css';
 const Clients = () => {
   const { t } = useTranslation();
 
-  const clientsData = [
+  const clientsData: Array<{ name: string; url?: string }> = [
     // { name: "RadiographXpress", url: "https://radiographxpress.com.mx/" },
     { name: "CAPA(S) Arquitectura" }
   ];
