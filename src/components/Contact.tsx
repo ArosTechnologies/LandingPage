@@ -7,6 +7,12 @@ import { useState, useEffect } from 'react';
 const Contact = () => {
   const { t } = useTranslation();
   const [interest, setInterest] = useState('');
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+
+  // IMPORTANTE: Asegúrate de tener VITE_FORMSPREE_ID en tu archivo .env
+  const formspreeId = import.meta.env.VITE_FORMSPREE_ID || 'REEMPLAZAR_CON_TU_ID';
+  const FORMSPREE_ENDPOINT = `https://formspree.io/f/${formspreeId}`;
 
   useEffect(() => {
     // Parse interest from hash e.g., #/contact?interest=aros_pacs
@@ -21,10 +27,35 @@ const Contact = () => {
     }
   }, []);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // In a real app, this would send data to an API
-    alert('Thank you for reaching out! We will get back to you soon.');
+    setIsSubmitting(true);
+    setSubmitStatus('idle');
+
+    const form = e.target as HTMLFormElement;
+    const formData = new FormData(form);
+
+    try {
+      const response = await fetch(FORMSPREE_ENDPOINT, {
+        method: 'POST',
+        body: formData,
+        headers: {
+          'Accept': 'application/json'
+        }
+      });
+      
+      if (response.ok) {
+        setSubmitStatus('success');
+        form.reset();
+        setInterest('');
+      } else {
+        setSubmitStatus('error');
+      }
+    } catch (error) {
+      setSubmitStatus('error');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -66,20 +97,32 @@ const Contact = () => {
 
           <div className="contact-form-container glass-panel">
             <form className="contact-form" onSubmit={handleSubmit}>
+              {submitStatus === 'success' && (
+                <div style={{ backgroundColor: 'rgba(34, 197, 94, 0.1)', color: '#22c55e', border: '1px solid #22c55e', padding: '1rem', borderRadius: '0.5rem', marginBottom: '1.5rem' }}>
+                  {t('contact.form.success', '¡Gracias! Tu mensaje ha sido enviado correctamente. Nos pondremos en contacto contigo pronto.')}
+                </div>
+              )}
+              {submitStatus === 'error' && (
+                <div style={{ backgroundColor: 'rgba(239, 68, 68, 0.1)', color: '#ef4444', border: '1px solid #ef4444', padding: '1rem', borderRadius: '0.5rem', marginBottom: '1.5rem' }}>
+                  {t('contact.form.error', 'Hubo un error al enviar tu mensaje. Por favor, inténtalo de nuevo.')}
+                </div>
+              )}
+
               <div className="form-group">
                 <label htmlFor="name" className="form-label">{t('contact.form.name')}</label>
-                <input type="text" id="name" className="form-input" required placeholder={t('contact.form.name_placeholder')} />
+                <input type="text" id="name" name="name" className="form-input" required placeholder={t('contact.form.name_placeholder')} />
               </div>
 
               <div className="form-group">
                 <label htmlFor="email" className="form-label">{t('contact.form.email')}</label>
-                <input type="email" id="email" className="form-input" required placeholder={t('contact.form.email_placeholder')} />
+                <input type="email" id="email" name="email" className="form-input" required placeholder={t('contact.form.email_placeholder')} />
               </div>
 
               <div className="form-group">
                 <label htmlFor="interest" className="form-label">{t('contact.form.interest', 'Product or Service of Interest')}</label>
                 <select 
                   id="interest" 
+                  name="interest"
                   className="form-input" 
                   value={interest} 
                   onChange={(e) => setInterest(e.target.value)}
@@ -102,6 +145,7 @@ const Contact = () => {
                   <input
                     type="number"
                     id="budget"
+                    name="budget"
                     className="form-input"
                     min="0"
                     onKeyDown={(e) => {
@@ -114,7 +158,7 @@ const Contact = () => {
                 </div>
                 <div className="form-group" style={{ flex: 1 }}>
                   <label htmlFor="currency" className="form-label">{t('contact.form.currency')}</label>
-                  <select id="currency" className="form-input">
+                  <select id="currency" name="currency" className="form-input">
                     <option value="USD">USD</option>
                     <option value="MXN">MXN</option>
                     <option value="EUR">EUR</option>
@@ -127,6 +171,7 @@ const Contact = () => {
                 <label htmlFor="inquiry" className="form-label">{t('contact.form.inquiry')}</label>
                 <textarea
                   id="inquiry"
+                  name="inquiry"
                   className="form-input form-textarea"
                   required
                   placeholder={t('contact.form.inquiry_placeholder')}
@@ -138,14 +183,17 @@ const Contact = () => {
                 <label htmlFor="requirements" className="form-label">{t('contact.form.requirements')}</label>
                 <textarea
                   id="requirements"
+                  name="requirements"
                   className="form-input form-textarea"
                   placeholder={t('contact.form.requirements_placeholder')}
                   rows={3}
                 ></textarea>
               </div>
 
-              <button type="submit" className="btn btn-primary form-submit">
-                {t('contact.form.submit')} <Send size={18} />
+              <button type="submit" className="btn btn-primary form-submit" disabled={isSubmitting}>
+                {isSubmitting ? t('contact.form.submitting', 'Enviando...') : (
+                  <>{t('contact.form.submit')} <Send size={18} /></>
+                )}
               </button>
             </form>
           </div>
