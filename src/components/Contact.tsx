@@ -22,6 +22,7 @@ const Contact = () => {
       const params = new URLSearchParams(queryString);
       const interestParam = params.get('interest');
       if (interestParam) {
+        // eslint-disable-next-line react-hooks/set-state-in-effect
         setInterest(interestParam);
       }
     }
@@ -53,7 +54,7 @@ const Contact = () => {
         setSubmitStatus('error');
         setTimeout(() => setSubmitStatus('idle'), 4000);
       }
-    } catch (error) {
+    } catch (_error) {
       setSubmitStatus('error');
       setTimeout(() => setSubmitStatus('idle'), 4000);
     } finally {
