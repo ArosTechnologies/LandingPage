@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-// import { ArrowRight } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import './Products.css';
 
 const Products = () => {
@@ -15,8 +15,8 @@ const Products = () => {
   ];
 
   // Cast the translated items to an array of objects
-  const products = t('products.items', { returnObjects: true }) as Array<{title: string, description: string, learn_more?: string}>;
-  const eduProducts = t('products.edu_items', { returnObjects: true }) as Array<{title: string, description: string, learn_more?: string}>;
+  const products = t('products.items', { returnObjects: true }) as Array<{title: string, description: string, learn_more?: string, href?: string}>;
+  const eduProducts = t('products.edu_items', { returnObjects: true }) as Array<{title: string, description: string, learn_more?: string, href?: string}>;
 
   return (
     <section id="products" className="products-page">
@@ -41,9 +41,15 @@ const Products = () => {
                     <div className="product-content">
                       <h3 className="product-card-title">{product.title}</h3>
                       <p className="product-desc">{product.description}</p>
-                      <span className="product-link-text" style={{ color: 'var(--text-secondary)', textDecoration: 'none' }}>
-                        {t('products.coming_soon')}
-                      </span>
+                      {product.href ? (
+                        <a href={product.href} className="product-link-text" style={{ textDecoration: 'none', cursor: 'pointer' }}>
+                          {product.learn_more} <ArrowRight size={16} />
+                        </a>
+                      ) : (
+                        <span className="product-link-text" style={{ color: 'var(--text-secondary)', textDecoration: 'none' }}>
+                          {t('products.coming_soon')}
+                        </span>
+                      )}
                     </div>
                   </div>
                 </div>
@@ -64,9 +70,15 @@ const Products = () => {
                     <div className="product-content">
                       <h3 className="product-card-title">{product.title}</h3>
                       <p className="product-desc">{product.description}</p>
-                      <span className="product-link-text" style={{ color: 'var(--text-secondary)', textDecoration: 'none' }}>
-                        {t('products.coming_soon')}
-                      </span>
+                      {product.href ? (
+                        <a href={product.href} className="product-link-text" style={{ textDecoration: 'none', cursor: 'pointer' }}>
+                          {product.learn_more} <ArrowRight size={16} />
+                        </a>
+                      ) : (
+                        <span className="product-link-text" style={{ color: 'var(--text-secondary)', textDecoration: 'none' }}>
+                          {t('products.coming_soon')}
+                        </span>
+                      )}
                     </div>
                   </div>
                 </div>

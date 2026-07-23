@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import { Send, Phone, Mail } from 'lucide-react';
+import { Send, Phone, Mail, CheckCircle, AlertCircle } from 'lucide-react';
 import './Contact.css';
 
 import { useState, useEffect } from 'react';
@@ -43,16 +43,19 @@ const Contact = () => {
           'Accept': 'application/json'
         }
       });
-      
+
       if (response.ok) {
         setSubmitStatus('success');
         form.reset();
         setInterest('');
+        setTimeout(() => setSubmitStatus('idle'), 4000);
       } else {
         setSubmitStatus('error');
+        setTimeout(() => setSubmitStatus('idle'), 4000);
       }
     } catch (error) {
       setSubmitStatus('error');
+      setTimeout(() => setSubmitStatus('idle'), 4000);
     } finally {
       setIsSubmitting(false);
     }
@@ -97,17 +100,6 @@ const Contact = () => {
 
           <div className="contact-form-container glass-panel">
             <form className="contact-form" onSubmit={handleSubmit}>
-              {submitStatus === 'success' && (
-                <div style={{ backgroundColor: 'rgba(34, 197, 94, 0.1)', color: '#22c55e', border: '1px solid #22c55e', padding: '1rem', borderRadius: '0.5rem', marginBottom: '1.5rem' }}>
-                  {t('contact.form.success', '¡Gracias! Tu mensaje ha sido enviado correctamente. Nos pondremos en contacto contigo pronto.')}
-                </div>
-              )}
-              {submitStatus === 'error' && (
-                <div style={{ backgroundColor: 'rgba(239, 68, 68, 0.1)', color: '#ef4444', border: '1px solid #ef4444', padding: '1rem', borderRadius: '0.5rem', marginBottom: '1.5rem' }}>
-                  {t('contact.form.error', 'Hubo un error al enviar tu mensaje. Por favor, inténtalo de nuevo.')}
-                </div>
-              )}
-
               <div className="form-group">
                 <label htmlFor="name" className="form-label">{t('contact.form.name')}</label>
                 <input type="text" id="name" name="name" className="form-input" required placeholder={t('contact.form.name_placeholder')} />
@@ -120,11 +112,11 @@ const Contact = () => {
 
               <div className="form-group">
                 <label htmlFor="interest" className="form-label">{t('contact.form.interest', 'Product or Service of Interest')}</label>
-                <select 
-                  id="interest" 
+                <select
+                  id="interest"
                   name="interest"
-                  className="form-input" 
-                  value={interest} 
+                  className="form-input"
+                  value={interest}
                   onChange={(e) => setInterest(e.target.value)}
                   required
                 >
@@ -190,8 +182,23 @@ const Contact = () => {
                 ></textarea>
               </div>
 
-              <button type="submit" className="btn btn-primary form-submit" disabled={isSubmitting}>
-                {isSubmitting ? t('contact.form.submitting', 'Enviando...') : (
+              <button
+                type="submit"
+                className="btn btn-primary form-submit"
+                disabled={isSubmitting || submitStatus === 'success'}
+                style={
+                  submitStatus === 'success' ? { backgroundColor: '#22c55e', borderColor: '#22c55e', color: 'white' } :
+                    submitStatus === 'error' ? { backgroundColor: '#ef4444', borderColor: '#ef4444', color: 'white' } :
+                      {}
+                }
+              >
+                {isSubmitting ? (
+                  t('contact.form.submitting', 'Enviando...')
+                ) : submitStatus === 'success' ? (
+                  <>{t('contact.form.success_btn', '¡Enviado con éxito!')} <CheckCircle size={18} /></>
+                ) : submitStatus === 'error' ? (
+                  <>{t('contact.form.error_btn', 'Error al enviar')} <AlertCircle size={18} /></>
+                ) : (
                   <>{t('contact.form.submit')} <Send size={18} /></>
                 )}
               </button>

@@ -8,11 +8,12 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  min-height: 100vh;
   padding: 180px 0 80px 0;
   background-color: var(--bg-primary);
   background-image: 
-    linear-gradient(rgba(255, 69, 0, 0.05) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 69, 0, 0.05) 1px, transparent 1px);
+    linear-gradient(rgba(0, 0, 0, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.08) 1px, transparent 1px);
   background-size: 40px 40px;
   background-position: center center;
   overflow: hidden;
@@ -692,4 +693,49 @@
     padding-top: 120px;
     padding-bottom: 60px;
   }
+}
+
+/* Heartbeat Water Ripple Animation */
+.heartbeat-ripple-container {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  pointer-events: none;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.ripple-grid {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  /* Exactly the same size as the base grid, but orange */
+  background-image: 
+    linear-gradient(rgba(255, 69, 0, 0.7) 2px, transparent 2px),
+    linear-gradient(90deg, rgba(255, 69, 0, 0.7) 2px, transparent 2px);
+  background-size: 40px 40px;
+  background-position: center center;
+  
+  /* Mask to create a medium expanding ring */
+  -webkit-mask-image: radial-gradient(circle, transparent 43%, black 50%, transparent 57%);
+  mask-image: radial-gradient(circle, transparent 43%, black 50%, transparent 57%);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+}
+
+/* Animations and timings for Heartbeat (Lub-Dub) */
+.ripple-1 { animation: wave-mask-lub 2s infinite cubic-bezier(0.1, 0.8, 0.3, 1); }
+.ripple-2 { animation: wave-mask-dub 2s infinite cubic-bezier(0.1, 0.8, 0.3, 1); }
+
+@keyframes wave-mask-lub {
+  0% { -webkit-mask-size: 0vmax 0vmax; mask-size: 0vmax 0vmax; opacity: 1; }
+  60% { -webkit-mask-size: 200vmax 200vmax; mask-size: 200vmax 200vmax; opacity: 0; }
+  100% { -webkit-mask-size: 200vmax 200vmax; mask-size: 200vmax 200vmax; opacity: 0; }
+}
+
+@keyframes wave-mask-dub {
+  0%, 14.9% { -webkit-mask-size: 0vmax 0vmax; mask-size: 0vmax 0vmax; opacity: 0; }
+  15% { -webkit-mask-size: 0vmax 0vmax; mask-size: 0vmax 0vmax; opacity: 1; }
+  75% { -webkit-mask-size: 200vmax 200vmax; mask-size: 200vmax 200vmax; opacity: 0; }
+  100% { -webkit-mask-size: 200vmax 200vmax; mask-size: 200vmax 200vmax; opacity: 0; }
 }

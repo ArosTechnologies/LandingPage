@@ -154,6 +154,11 @@
   color: var(--accent-orange);
   transition: gap var(--transition-fast);
   margin-top: auto;
+  line-height: 1;
+}
+
+.product-link-text svg {
+  display: block;
 }
 
 .product-card:hover .product-link-text {

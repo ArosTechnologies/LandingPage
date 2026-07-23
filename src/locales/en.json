@@ -70,7 +70,7 @@
     },
     "pacs": {
       "title": "AROS PACS",
-      "description": "Med Cloud is our upcoming line of medical products designed to revolutionize healthcare. AROS PACS is the flagship product of this suite—a powerful system that allows clinics to modernize their processes, providing a highly professional service to patients. It offers a unified platform for patients to view their medical studies seamlessly. Leveraging the Med Cloud ecosystem, it also implements AI diagnostic and prediction models to standardize medical care, enabling independent clinics to compete directly with top-tier hospitals.",
+      "description": "AROS PACS is the flagship product of our Med Cloud suite. It is a powerful system that allows clinics to modernize their workflows and provide a highly professional service. It offers a centralized platform for patients to view their medical studies seamlessly, enabling independent clinics to compete directly with top-tier hospitals.",
       "objectives_title": "Platform Features",
       "objectives_intro": "A modernized, digital ecosystem tailored for the future of healthcare.",
       "obj1_title": "Global Medical Network",

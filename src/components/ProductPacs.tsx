@@ -60,7 +60,12 @@ const ProductPacs = () => {
     <div className="product-page">
       {/* Product Hero */}
       <section className="product-hero-centered">
-        <div className="hero-glow-orb"></div>
+        {/* Heartbeat Water Ripple Animation */}
+        <div className="heartbeat-ripple-container">
+          <div className="ripple-grid ripple-1"></div>
+          <div className="ripple-grid ripple-2"></div>
+        </div>
+
         <div className="container text-center">
           <div className="hero-centered-content animate-fade-in">
             <span className="product-badge">MED CLOUD</span>

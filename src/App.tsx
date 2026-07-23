@@ -11,7 +11,7 @@ import About from './components/About';
 import Contact from './components/Contact';
 import Services from './components/Services';
 import Footer from './components/Footer';
-// import ProductPacs from './components/ProductPacs';
+import ProductPacs from './components/ProductPacs';
 import ServiceEnterprise from './components/ServiceEnterprise';
 import ServiceCloud from './components/ServiceCloud';
 import ServiceLegacy from './components/ServiceLegacy';
@@ -59,9 +59,9 @@ function App() {
     if (currentHash.startsWith('#/about')) {
       return <About />;
     }
-    // if (currentHash.startsWith('#/products/pacs')) {
-    //   return <ProductPacs />;
-    // }
+    if (currentHash.startsWith('#/products/pacs')) {
+      return <ProductPacs />;
+    }
     if (currentHash.startsWith('#/products') || currentHash.startsWith('#/demos')) {
       return <Products />; // Temporarily still rendering Products component for the products page
     }
