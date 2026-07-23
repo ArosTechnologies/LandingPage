@@ -1,0 +1,14 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+echo "=================================================="
+echo "🚀 Ejecutando validaciones locales (pre-push)..."
+echo "=================================================="
+
+echo "1/2 🔍 Verificando linting..."
+npm run lint || { echo "❌ Falló el linting. Abortando push."; exit 1; }
+
+echo "2/2 📦 Verificando compilación..."
+npm run build || { echo "❌ Falló la compilación. Abortando push."; exit 1; }
+
+echo "✅ Todas las pruebas locales pasaron."

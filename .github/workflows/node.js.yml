@@ -28,7 +28,6 @@ jobs:
       run: npm run build
       env:
         VITE_FORMSPREE_ID: ${{ secrets.VITE_FORMSPREE_ID }}
-
     - name: Deploy to GoDaddy via FTP
       uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
@@ -36,4 +35,6 @@ jobs:
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
         local-dir: ./dist/
-        server-dir: ./ # Assumes your FTP user points directly to public_html
+        server-dir: ./
+        protocol: ftps
+        security: loose
