@@ -54,7 +54,7 @@ const Contact = () => {
         setSubmitStatus('error');
         setTimeout(() => setSubmitStatus('idle'), 4000);
       }
-    } catch (_error) {
+    } catch {
       setSubmitStatus('error');
       setTimeout(() => setSubmitStatus('idle'), 4000);
     } finally {
