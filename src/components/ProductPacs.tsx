@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
-import { ArrowRight, Globe, Database, Cpu, Check, ShieldCheck, Download, Smartphone, ChevronDown, ChevronUp, X } from 'lucide-react';
+import { ArrowRight, Globe, Database, Cpu, Check, Download, Smartphone, ChevronDown, ChevronUp, X } from 'lucide-react';
 import SavingsComparison from './SavingsComparison';
 import './ProductPacs.css';
 
@@ -25,9 +25,15 @@ const ProductPacs = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const carouselRef = useRef<HTMLDivElement>(null);
   const mediaImages = [
-    "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=2400&q=80",
-    "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=2400&q=80",
-    "https://images.unsplash.com/photo-1576091160550-2108b34ce351?auto=format&fit=crop&w=2400&q=80"
+    "/assets/pacs/screenshot1.png",
+    "/assets/pacs/screenshot2.png",
+    "/assets/pacs/screenshot3.png",
+    "/assets/pacs/screenshot4.png",
+    "/assets/pacs/screenshot5.png",
+    "/assets/pacs/screenshot6.png",
+    "/assets/pacs/screenshot7.png",
+    "/assets/pacs/screenshot8.png",
+    "/assets/pacs/screenshot9.png"
   ];
 
   useEffect(() => {
@@ -333,11 +339,15 @@ const ProductPacs = () => {
                 </div>
               </div>
             </div>
-            <div className="portal-image-col">
-               <div className="portal-image-placeholder glass-panel">
-                  <ShieldCheck size={64} className="text-gradient" style={{ opacity: 0.5 }} />
-                  <p className="mt-md" style={{ color: 'var(--text-secondary)' }}>Secure Patient Portal Demo</p>
-               </div>
+            <div className="portal-image-col" style={{ display: 'flex', justifyContent: 'center' }}>
+               <video 
+                  src="/assets/pacs/aros_promotional.mp4" 
+                  autoPlay 
+                  loop 
+                  muted 
+                  playsInline 
+                  style={{ maxWidth: '320px', width: '100%', boxShadow: '0 10px 30px rgba(0,0,0,0.5)' }} 
+               />
             </div>
           </div>
         </div>

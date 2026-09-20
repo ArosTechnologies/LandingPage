@@ -57,7 +57,8 @@
         {
           "title": "AROS PACS",
           "description": "A comprehensive Electronic Health Record (EHR) system designed to modernize clinic workflows and provide patients with a professional, centralized platform to view their medical studies.",
-          "learn_more": "Learn More"
+          "learn_more": "Learn More",
+          "href": "#/products/pacs"
         }
       ],
       "edu_items": [
@@ -178,8 +179,8 @@
       "per_month": "/ mo",
       "disclaimer": "* Prices are expressed in US Dollars (USD) and do not include VAT.",
       "recommended": "Recommended",
-      "portal_title": "MediKali",
-      "portal_desc": "We believe patients deserve easy access to their health. Our platform includes MediKali, our open patient portal, from where they can:",
+      "portal_title": "Patient Portal",
+      "portal_desc": "We believe patients deserve easy access to their health. Our platform includes an open patient portal, from where they can:",
       "portal_f1_title": "Lightweight Web Viewing:",
       "portal_f1_desc": "View their images on any smartphone or computer instantly without needing to install specialized software, consuming minimal data.",
       "portal_f2_title": "Free DICOM Download:",

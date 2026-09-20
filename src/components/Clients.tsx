@@ -4,9 +4,11 @@ import './Clients.css';
 const Clients = () => {
   const { t } = useTranslation();
 
-  const clientsData: Array<{ name: string; url?: string }> = [
+  const clientsData: Array<{ name: React.ReactNode; url?: string }> = [
     { name: "RadiographXpress", url: "https://radiographxpress.com.mx/" },
-    { name: "CAPA(S) Arquitectura" }
+    { name: "CAPA(S) Arquitectura" },
+    { name: "CINAIM", url: "https://cinaim.org" },
+    { name: <>Casa de las Muñecas<br />Tiresias GTO</> }
   ];
 
   return (
@@ -19,11 +21,11 @@ const Clients = () => {
           {clientsData.map((client, i) => {
             if (client.url) {
               return (
-                <a 
-                  key={i} 
-                  href={client.url} 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
+                <a
+                  key={i}
+                  href={client.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="client-logo-card"
                 >
                   <span className="client-logo-placeholder">{client.name}</span>

@@ -110,9 +110,21 @@
   transition: filter var(--transition-normal), transform var(--transition-slow);
 }
 
+.product-logo {
+  width: 90%;
+  height: 90%;
+  object-fit: contain;
+  filter: grayscale(80%);
+  transition: filter var(--transition-normal);
+}
+
 .product-card:hover .product-img {
   filter: grayscale(0%);
   transform: scale(1.05);
+}
+
+.product-card:hover .product-logo {
+  filter: grayscale(0%);
 }
 
 .product-content {

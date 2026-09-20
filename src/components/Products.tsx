@@ -6,7 +6,7 @@ const Products = () => {
   const { t } = useTranslation();
 
   const productImages = [
-    "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80",
+    "/assets/pacs/AROS-MED.svg",
     "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
     "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=800&q=80",
     "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80",
@@ -15,8 +15,8 @@ const Products = () => {
   ];
 
   // Cast the translated items to an array of objects
-  const products = t('products.items', { returnObjects: true }) as Array<{title: string, description: string, learn_more?: string, href?: string}>;
-  const eduProducts = t('products.edu_items', { returnObjects: true }) as Array<{title: string, description: string, learn_more?: string, href?: string}>;
+  const products = t('products.items', { returnObjects: true }) as Array<{ title: string, description: string, learn_more?: string, href?: string }>;
+  const eduProducts = t('products.edu_items', { returnObjects: true }) as Array<{ title: string, description: string, learn_more?: string, href?: string }>;
 
   return (
     <section id="products" className="products-page">
@@ -27,7 +27,7 @@ const Products = () => {
           </h2>
           <p className="products-subtitle">{t('products.subtitle')}</p>
         </div>
-        
+
         <div className="products-categories">
           <div className="product-category">
             <h3 className="product-line-title">MED CLOUD</h3>
@@ -35,8 +35,13 @@ const Products = () => {
               {Array.isArray(products) && products.map((product, index) => (
                 <div key={index} className="animate-fade-in" style={{ animationDelay: `${index * 100}ms` }}>
                   <div className="product-card glass-panel" style={{ cursor: 'default' }}>
-                    <div className="product-img-wrapper">
-                      <img src={productImages[index]} alt={product.title} className="product-img" />
+                    <div className="product-img-wrapper" style={index === 0 ? { display: 'flex', justifyContent: 'center', alignItems: 'center' } : undefined}>
+                      <img 
+                        src={productImages[index]} 
+                        alt={product.title} 
+                        className={index === 0 ? "product-logo" : "product-img"} 
+                        style={index === 0 ? { transform: 'translateX(-5%)' } : undefined}
+                      />
                     </div>
                     <div className="product-content">
                       <h3 className="product-card-title">{product.title}</h3>

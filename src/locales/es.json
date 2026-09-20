@@ -57,7 +57,8 @@
         {
           "title": "AROS PACS",
           "description": "Un sistema integral de Historia Clínica Electrónica (EHR) diseñado para modernizar los flujos de trabajo clínicos y brindar a los pacientes una plataforma profesional y centralizada para visualizar sus estudios médicos.",
-          "learn_more": "Saber más"
+          "learn_more": "Saber más",
+          "href": "#/products/pacs"
         }
       ],
       "edu_items": [
@@ -178,8 +179,8 @@
       "per_month": "/ mes",
       "disclaimer": "* Precios expresados en dólares estadounidenses (USD) y no incluyen IVA.",
       "recommended": "Recomendado",
-      "portal_title": "MediKali",
-      "portal_desc": "Creemos que los pacientes merecen acceso fácil a su salud. Nuestra plataforma incluye MediKali, nuestro portal de pacientes abierto, desde donde ellos pueden:",
+      "portal_title": "Portal de Pacientes",
+      "portal_desc": "Creemos que los pacientes merecen acceso fácil a su salud. Nuestra plataforma incluye un portal de pacientes abierto, desde donde ellos pueden:",
       "portal_f1_title": "Visualización Web Ligera:",
       "portal_f1_desc": "Ver sus imágenes en cualquier smartphone o computadora de forma instantánea sin necesidad de instalar software especializado, consumiendo el mínimo de datos.",
       "portal_f2_title": "Descarga Libre de DICOM:",
