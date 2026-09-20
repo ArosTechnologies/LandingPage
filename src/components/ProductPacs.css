@@ -192,9 +192,11 @@
 .media-carousel-container {
   width: 100%;
   background: var(--bg-primary);
-  padding: 0;
+  padding: 3rem 0 4.5rem 0; /* Increased top and bottom padding */
   position: relative;
   overflow: hidden;
+  border-top: 2px solid var(--accent-orange);
+  border-bottom: 2px solid var(--accent-orange);
 }
 
 .media-carousel {
@@ -206,6 +208,8 @@
   width: 100%;
   aspect-ratio: 24/9;
   max-height: 65vh;
+  align-items: center;
+  box-sizing: border-box;
 }
 
 .media-carousel::-webkit-scrollbar {
@@ -214,21 +218,21 @@
 
 .carousel-dots {
   position: absolute;
-  bottom: 1.5rem;
+  bottom: 1.5rem; /* Lifted up slightly within the new padding space */
   left: 50%;
   transform: translateX(-50%);
   display: flex;
   gap: 12px;
   z-index: 10;
-  background: rgba(0,0,0,0.4);
-  padding: 8px 16px;
-  border-radius: 20px;
+  background: rgba(0,0,0,0.5);
+  padding: 10px 16px;
+  border-radius: 0; /* Square edges for the container */
 }
 
 .carousel-dot {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  border-radius: 0; /* Square buttons */
   background: rgba(255,255,255,0.4);
   border: none;
   cursor: pointer;
@@ -238,7 +242,7 @@
 
 .carousel-dot.active {
   background: var(--accent-orange);
-  transform: scale(1.3);
+  transform: scale(1.2);
 }
 
 .carousel-dot:hover:not(.active) {
@@ -247,10 +251,28 @@
 
 .media-carousel img {
   scroll-snap-align: center;
-  flex: 0 0 100%;
+  flex: 0 0 70%;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  max-height: 100%;
+  object-fit: contain;
+  object-position: center center;
+  transition: filter 0.5s ease, transform 0.5s ease;
+  filter: brightness(0.4) blur(1px);
+  transform: scale(0.9);
+}
+
+/* Offset so first/last images can snap to center */
+.media-carousel img:first-child {
+  margin-left: 15%; /* (100% - 70%) / 2 */
+}
+
+.media-carousel img:last-child {
+  margin-right: 15%; /* (100% - 70%) / 2 */
+}
+
+.media-carousel img.active-slide {
+  filter: brightness(1) blur(0px);
+  transform: scale(1);
 }
 
 

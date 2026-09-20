@@ -111,11 +111,15 @@
 }
 
 .product-logo {
-  width: 90%;
-  height: 90%;
+  width: 60%;
+  height: auto;
+  max-height: 70%;
   object-fit: contain;
-  filter: grayscale(80%);
+  object-position: center center;
+  filter: grayscale(20%);
   transition: filter var(--transition-normal);
+  display: block;
+  margin: 0 auto;
 }
 
 .product-card:hover .product-img {

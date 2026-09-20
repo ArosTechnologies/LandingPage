@@ -33,31 +33,30 @@ const ProductPacs = () => {
     "/assets/pacs/screenshot6.png",
     "/assets/pacs/screenshot7.png",
     "/assets/pacs/screenshot8.png",
-    "/assets/pacs/screenshot9.png"
+    "/assets/pacs/screenshot10.png"
   ];
 
   useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrentSlide((prev) => {
-        const next = prev === mediaImages.length - 1 ? 0 : prev + 1;
-        if (carouselRef.current) {
-          carouselRef.current.scrollTo({
-            left: next * carouselRef.current.offsetWidth,
-            behavior: 'smooth'
-          });
-        }
-        return next;
-      });
+    const timer = setTimeout(() => {
+      const next = currentSlide === mediaImages.length - 1 ? 0 : currentSlide + 1;
+      if (carouselRef.current) {
+        const slideWidth = carouselRef.current.children[0]?.clientWidth || carouselRef.current.offsetWidth * 0.7;
+        carouselRef.current.scrollTo({
+          left: next * slideWidth,
+          behavior: 'smooth'
+        });
+      }
+      setCurrentSlide(next);
     }, 5000);
-    return () => clearInterval(timer);
-  }, [mediaImages.length]);
+    return () => clearTimeout(timer);
+  }, [currentSlide, mediaImages.length]);
 
   const handleCarouselScroll = (e: React.UIEvent<HTMLDivElement>) => {
     if (!carouselRef.current) return;
     const scrollLeft = e.currentTarget.scrollLeft;
-    const width = e.currentTarget.offsetWidth;
-    const newSlide = Math.round(scrollLeft / width);
-    if (newSlide !== currentSlide) {
+    const slideWidth = carouselRef.current.children[0]?.clientWidth || e.currentTarget.offsetWidth * 0.7;
+    const newSlide = Math.round(scrollLeft / slideWidth);
+    if (newSlide !== currentSlide && newSlide >= 0 && newSlide < mediaImages.length) {
       setCurrentSlide(newSlide);
     }
   };
@@ -99,7 +98,12 @@ const ProductPacs = () => {
             onScroll={handleCarouselScroll}
           >
             {mediaImages.map((src, idx) => (
-              <img key={idx} src={src} alt={`Dashboard ${idx + 1}`} />
+              <img 
+                key={idx} 
+                src={src} 
+                alt={`Dashboard ${idx + 1}`} 
+                className={idx === currentSlide ? 'active-slide' : 'inactive-slide'}
+              />
             ))}
           </div>
           <div className="carousel-dots">
@@ -110,8 +114,9 @@ const ProductPacs = () => {
                 onClick={() => {
                   setCurrentSlide(idx);
                   if (carouselRef.current) {
+                    const slideWidth = carouselRef.current.children[0]?.clientWidth || carouselRef.current.offsetWidth * 0.7;
                     carouselRef.current.scrollTo({
-                      left: idx * carouselRef.current.offsetWidth,
+                      left: idx * slideWidth,
                       behavior: 'smooth'
                     });
                   }

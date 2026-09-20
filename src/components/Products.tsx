@@ -35,12 +35,11 @@ const Products = () => {
               {Array.isArray(products) && products.map((product, index) => (
                 <div key={index} className="animate-fade-in" style={{ animationDelay: `${index * 100}ms` }}>
                   <div className="product-card glass-panel" style={{ cursor: 'default' }}>
-                    <div className="product-img-wrapper" style={index === 0 ? { display: 'flex', justifyContent: 'center', alignItems: 'center' } : undefined}>
+                    <div className="product-img-wrapper" style={index === 0 ? { display: 'flex', justifyContent: 'center', alignItems: 'center', background: '#f5f5f5' } : undefined}>
                       <img 
                         src={productImages[index]} 
                         alt={product.title} 
                         className={index === 0 ? "product-logo" : "product-img"} 
-                        style={index === 0 ? { transform: 'translateX(-5%)' } : undefined}
                       />
                     </div>
                     <div className="product-content">
