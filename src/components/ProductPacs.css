@@ -553,9 +553,14 @@
 
 .benefit-icon-wrapper {
   color: var(--accent-orange);
-  background: rgba(255, 69, 0, 0.1);
-  padding: 12px;
-  border-radius: 50%; /* Just for the icon wrapper to pop a bit differently */
+  background: rgba(255, 69, 0, 0.05);
+  border: 1px solid rgba(255, 69, 0, 0.15);
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
 }
 
 .benefit-title {
